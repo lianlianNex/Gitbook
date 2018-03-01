@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-* [Payment API](docs/aggregatePaymentWeb.md)
+* [Aggregate Payment API](docs/aggregatePaymentWeb.md)
     * [Payment Status Query API](docs/paymentStatusQuery.md)
 	* [Synchronous Notification](docs/aggregateSynNotification.md)
 	* [Asynchronous Notification](docs/aggregateAsynNotification.md)

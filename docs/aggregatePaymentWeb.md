@@ -1,4 +1,4 @@
-# Aggregate Web API
+# Aggregate Payment API
 
 This document is targeted to people who are capable of web development and understand server development, as well as relevant project management personnel.
 

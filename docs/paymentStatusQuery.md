@@ -1,4 +1,4 @@
-# Payment Result Query API
+# Payment Status Query API
 
 
 Merchants can call this API from server-side to obtain the information on a particular transaction, such as the pay_result, dt_order, money_order, settle_date, info_order, etc. 

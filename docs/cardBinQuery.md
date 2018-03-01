@@ -1,7 +1,5 @@
 # Card Bin Query API
 
-***
-
 ## Request
 
 ###### Endpoint
