@@ -23,7 +23,7 @@ Once a payment request is processed, LianLian will send the results to the notif
 |settle_date|Optional|String(8)| Format YYYYMMDD. Returns when payment is successful|
 |info_order|Optional|String(255)| Returns when ```info_order``` is sent in API requests|
 |pay_type|Optional|String| The payment method used in this transaction. <br> 0, balance payment <br> 1, online banking payment (debit card) <br> 8, online banking payment (credit card) <br> 9, business online banking payment <br> 2, express payment (debit card) <br> 3, express payment (credit card)<br> D, verified payment <br> I, WeChat Payment <br> L, Alipay Payment| 
-|bank_code|Optional|String| Returns only for express payment and verified payment.|
+|bank_code|Optional|String| Short codes of banks |
 |no_agree|Optional|String| Permanent token. Returns for express payment and verified payment. |
 
 ###### Sample asynchronous notification
@@ -62,4 +62,4 @@ If we haven't received your response within 5 seconds or the response does NOT m
  
 Resending logic: 30 times in total with an interval of 2 minutes, until your server has correctly handled the notification. 
 
-But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [order status query API](/docs/orderStatusQuery.html) by yourself. 
+But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [paymnet status query API](docs/paymentStatusQuery.html) by yourself. 
