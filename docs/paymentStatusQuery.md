@@ -90,7 +90,7 @@ https://wallet.lianlianpay.com/llwalletapi/orderquery.htm
 ###### Sample Request
 
 ```html
-curl https://traderapi.lianlianpay.com/refund.htm \
+curl https://wallet.lianlianpay.com/llwalletapi/orderquery.htm \
 -H "Content-type:application/json;charset=utf-8" \
 -d '{
         "oid_partner":"201103171000000000",
