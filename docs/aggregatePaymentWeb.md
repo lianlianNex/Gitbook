@@ -29,7 +29,7 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 ```
 
-###### Request Parameter
+###### Request Parameters
 
 |Name|Required|Type|Description|
 |---|---|---|---|

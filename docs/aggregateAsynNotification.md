@@ -1,6 +1,6 @@
-# Asynchronous notification
+# Aggregate Payment Asynchronous Notification
 
-Once a payment request is processed, LianLian will send the results to the notification URL ```notify_url``` via server-side HTTP requests, which is wrote into *HttpInputStream*. You can choose one way to obtain parameters depedning on your programming language:
+Once a payment request is processed, LianLian will send the results to the notification URL ```notify_url``` via server-side HTTP requests, which is wrote into *HttpInputStream*. You can choose one way to obtain parameters depending on your programming language:
 
 * PHP: ```file_get_contents("php://input");```
 * Java: ```request.getInputStream();```
@@ -8,7 +8,7 @@ Once a payment request is processed, LianLian will send the results to the notif
 
 > Your servers are informed of the successful result only. No notification will be sent for unsuccessful or abnormal transactions. 
 
-###### Parameter
+###### Parameters
 
 |Name|Required|Type|Description|
 |---|---|---|---|
@@ -45,9 +45,11 @@ Once a payment request is processed, LianLian will send the results to the notif
 }
 ```
 
-###### Handle asynchronous notification
+***
 
-LianLian expects you to respond asynchronous notification with below json object which means you have received our notification and proceeded with delivery logics:
+## Handle asynchronous notification
+
+LianLian expects you to respond asynchronous notification with below json object which means you have received our notification and proceeded with delivery logic:
 
 ```json
 {
@@ -60,4 +62,4 @@ If we haven't received your response within 5 seconds or the response does NOT m
  
 Resending logic: 30 times in total with an interval of 2 minutes, until your server has correctly handled the notification. 
 
-But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [order status API]() by yourself. 
+But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [order status query API](/docs/orderStatusQuery.html) by yourself. 
