@@ -9,7 +9,7 @@ LianLian provides 2 ways for you to obtain reports:
 * Download it from Sftp servers. In order to obtain Sftp access, you need to contact [tech_support@yintong.com.cn](mailto:tech_support@yintong.com.cn).
 ***
 
-## Stfp Reports
+## Sftp Reports
 
 ###### Daily report file format
 

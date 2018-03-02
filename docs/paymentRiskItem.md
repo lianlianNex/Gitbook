@@ -4,13 +4,9 @@ In order to identify and prevent fraud transactions, risk parameters, as known a
 
 Risk parameters is related to below keys:
  
-* The ```frms_ware_category``` of your ```oid_partner```:
-    * If prefix is 1, range: 1000 ~ 1999, [basic parameters](#basic-parameters) is required.
-    * If prefix is 2, range: 2000 ~ 2999, [basic parameters](#basic-parameters) and [real-name parameters](#real-name-parameters) are required.
-    * If prefix is 4, range: 4000 ~ 4999, [basic parameters](#basic-parameters) and [delivery parameters](#delivery-parameters) are required.
-    * For other cases, you may consult LianLian support for help.
+* The ```frms_ware_category``` of your ```oid_partner```, each of them has its own requirement of risk parameters. You may contact [tech_support@yintong.com.cn](mailto:tech_support@yintong.com.cn) for more details.
     
-> Generally, ```frms_ware_code``` is a code with 4 digits which represents your industry category. Each ```oid_partner``` has its own ```frms_ware_category``` which is assigned by LianLian. You may consult LianLian support for the accurate value.
+> Generally, ```frms_ware_code``` is a code with 4 digits which represents your industry category. Each ```oid_partner``` has its own ```frms_ware_category``` which is assigned by LianLian when it is created.
 
 * Your implementation. If you have implemented LianLian payment products on your server side directly, [API parameters](#api-parameters) is required.
 
@@ -20,7 +16,9 @@ All risk parameters ought to be set in a json format and assigned to ```risk_ite
 
 ```json
 {
-    "risk_item":"{\"frms_ware_category\":\"1002\",\"user_info_mercht_userno\":\"...\",\"user_info_mercht_userlogin\":\"\",\"user_info_mail\":\"\",\"user_info_bind_phone\":\"...\",\"user_info_mercht_usertype\":\"\",\"user_info_dt_registe\":\"20180206143300\",\"user_info_register_ip\":\"\",\"user_info_full_name\":\"...\",\"user_info_id_type\":\"0\",\"user_info_id_no\":\"...\",\"user_info_identify_state\":\"0\",\"user_info_identify_type\":\"4\"}"
+    "before_risk_item":"...",
+    "risk_item":"{\"frms_ware_category\":\"1002\",\"user_info_mercht_userno\":\"...\",\"user_info_mercht_userlogin\":\"\",\"user_info_mail\":\"\",\"user_info_bind_phone\":\"...\",\"user_info_mercht_usertype\":\"\",\"user_info_dt_registe\":\"20180206143300\",\"user_info_register_ip\":\"\",\"user_info_full_name\":\"...\",\"user_info_id_type\":\"0\",\"user_info_id_no\":\"...\",\"user_info_identify_state\":\"0\",\"user_info_identify_type\":\"4\"}",
+    "after_risk_item":"..."
 }
 ```
 

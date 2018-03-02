@@ -66,21 +66,3 @@ Below parameters are included in ```agreement_list```:
 |bank_name|Required|String(32)| The bank name of used card, in Chinese|
 |card_type|Required|String(1) | 2, debit card <br> 3, credit card|
 |bind_mobile|Required|String(11)| Masked user phone number |
-
-###### Sample Response
-
-```json
-{
-    "ret_code":"0000",
-    "ret_msg":"交易成功",
-    "oid_partner":"201103171000000000",
-    "no_refund":"2013051500001",
-    "dt_refund":"20130515094018",
-    "oid_refundno":"2013051613121201",
-    "money_refund":"200.01",
-    "sta_refund":"2",
-    "settle_date":"20130627",
-    "sign_type":"RSA", 
-    "sign":"ZPZULntRpJwFmGNIVKwjLEF2Tze7bqs60rxQ22CqT5J1UlvGo575QK9z/+p+7E9cOoRoWzqR6xHZ6WVv3dloyGKDR0btvrdqPgUAoeaX/YOWzTh00vwcQ+HBtXE+vPTfAqjCTxiiSJEOY7ATCF1q7iP3sfQxhS0nDUug1LP3OLk="
-}
-```
