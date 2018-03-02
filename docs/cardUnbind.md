@@ -12,7 +12,7 @@ https: //traderapi.lianlianpay.com/bankcardunbind.htm
 
 |Name|Required|Type|Description|
 |---|---|---|---|
-|oid_partner|Required|String(18)|The unique identification assigned to the merchant. e.g. 201304121000001004|
+|oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |user_id|Required|String(32)|The unique identification assigned to the user in the merchant’s system|

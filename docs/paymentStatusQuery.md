@@ -25,7 +25,7 @@ https://wallet.lianlianpay.com/llwalletapi/orderquery.htm
       <td>oid_partner</td>
       <td>Required</td>
       <td>String(18)</td>
-      <td>A unique 18 digit number to identify a contracted merchant account. . e.g. 201304121000001004</td>
+      <td>A unique 18 digit number to identify a contracted merchant account. . E.g. 201304121000001004</td>
    </tr>
    <tr>
       <td>sign_type</td>
@@ -53,7 +53,7 @@ https://wallet.lianlianpay.com/llwalletapi/orderquery.htm
       <td>dt_order</td>
       <td>Optioanl</td>
       <td>String(14)</td>
-      <td>Merchant order date. Format: YYYYMMDDHHMMSS, e.g. 20170801225714</td>
+      <td>Merchant order date. Format: YYYYMMDDHHMMSS, E.g. 20170801225714</td>
    </tr>
    <tr>
       <td>oid_paybill</td>
@@ -111,14 +111,14 @@ curl https://wallet.lianlianpay.com/llwalletapi/orderquery.htm \
 |---|---|---|---|
 |ret_code|Required|String(4)|0000|
 |ret_msg|Required|String(100)|交易成功|
-|oid_partner|Required|String(18)|The unique identification assigned to the merchant. e.g. 201304121000001004|
+|oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |no_order|Optional|String(32)|Merchant order No.|
-|dt_order|Optional|String(14)|Merchant order date. Format: YYYYMMDDHHMMSS, e.g. 20170801225714|
-|oid_paybill|Optional|String(18)|Unique transaction No. in LianLian system. e.g. 2011030900001098|
+|dt_order|Optional|String(14)|Merchant order date. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
+|oid_paybill|Optional|String(18)|Unique transaction No. in LianLian system. E.g. 2011030900001098|
 |money_order|Optional|String(12)|Merchant order amount, range: 0.01 ~ 100,000,000.00, 2 decimal places are expected, in CNY|
-|result_pay|Optional|String| Payment result. e.g. SUCCESS|
+|result_pay|Optional|String| Payment result. E.g. SUCCESS|
 |settle_date|Optional|String(8)| Format YYYYMMDD. Returns when payment is successful|
 |info_order|Optional|String(255)| Returns when ```info_order``` is sent in API requests|
 |pay_type|Optional|String| The payment method used in this transaction. <br> 0, balance payment <br> 1, online banking payment (debit card) <br> 8, online banking payment (credit card) <br> 9, business online banking payment <br> 2, express payment (debit card) <br> 3, express payment (credit card)<br> D, verified payment <br> I, WeChat Payment <br> L, Alipay Payment| 

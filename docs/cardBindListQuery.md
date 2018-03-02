@@ -14,7 +14,7 @@ https://queryapi.lianlianpay.com/bankcardbindlist.htm
 
 |Name|Required|Type|Description|
 |---|---|---|---|
-|oid_partner|Required|String(18)|The unique identification assigned to the merchant. e.g. 201304121000001004|
+|oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |user_id|Required|String(32)|The unique identification assigned to the user in the merchant’s system|
@@ -51,7 +51,7 @@ curl https://queryapi.lianlianpay.com/bankcardbindlist.htm \
 |ret_msg|Required|String(100)|Return message, description of ```ret_code```, in Chinese |
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
-|oid_paybill|Required|String(18)|Unique transaction No. in LianLian system. e.g. 2011030900001098|
+|oid_paybill|Required|String(18)|Unique transaction No. in LianLian system. E.g. 2011030900001098|
 |user_id|Required|String(32)|The unique identification assigned to the user in the merchant’s system|
 |count|Required|String(8)|The count of ```no_agree``` |
 |aggrement_list|Optional|List| A list of ```no_agree``` which belongs to the current ```user_id```, in reverse chronological order |

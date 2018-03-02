@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- 由 Microsoft Visio, SVG Export 生成 连连钱包网银流程-en.svg Page-1 -->
+<!-- 由 Microsoft Visio, SVG Export 生成 aggregate_web_flow.svg Page-1 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
 		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="8.26772in" height="22.8858in"
 		viewBox="0 0 595.276 1647.78" xml:space="preserve" color-interpolation-filters="sRGB" class="st15">
@@ -18,13 +18,13 @@
 		.st4 {font-size:1em}
 		.st5 {marker-end:url(#mrkr4-33);stroke:#0000ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st6 {fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-opacity:1;stroke-width:0.068965517241379}
-		.st7 {fill:#ffffff;stroke:none;stroke-linecap:butt}
+		.st7 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
 		.st8 {fill:#000000;font-family:宋体;font-size:0.666664em}
-		.st9 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
-		.st10 {marker-end:url(#mrkr3-116);stroke:#0000ff;stroke-dasharray:1.68,1.2;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
-		.st11 {fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
-		.st12 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
-		.st13 {fill:#000000;font-family:宋体;font-size:0.666664em;font-weight:bold}
+		.st9 {marker-end:url(#mrkr3-116);stroke:#0000ff;stroke-dasharray:1.68,1.2;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st10 {fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st11 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st12 {fill:#000000;font-family:宋体;font-size:0.666664em;font-weight:bold}
+		.st13 {fill:#ffffff;stroke:none;stroke-linecap:butt}
 		.st14 {marker-end:url(#mrkr3-116);stroke:#0000ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st15 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
@@ -99,12 +99,12 @@
 							 1647.78 ZM11.91 1617.17 A3.40157 3.40157 -180 1 0 5.1 1617.17 A3.40157 3.40157 -180 1 0 11.91 1617.17
 							 Z" class="st1"/>
 			</g>
-			<g id="shape11-19" v:mID="11" v:groupContext="shape" transform="translate(20.7874,863.757)">
+			<g id="shape11-19" v:mID="11" v:groupContext="shape" transform="translate(20.7874,868.009)">
 				<title>工作表.11</title>
 			</g>
 			<g id="shape12-21" v:mID="12" v:groupContext="shape" transform="translate(1678.96,1647.78) rotate(90)">
 				<title>工作表.12</title>
-				<path d="M0 1647.78 L846.14 1647.78" class="st2"/>
+				<path d="M0 1647.78 L850.39 1647.78" class="st2"/>
 			</g>
 			<g id="shape8-24" v:mID="8" v:groupContext="groupContent">
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
@@ -143,12 +143,12 @@
 				<title>工作表.16</title>
 				<path d="M8.5 1647.78 a0 0 0 1 1 0 0 a0 0 0 1 1 0 0 Z" class="st1"/>
 			</g>
-			<g id="shape17-41" v:mID="17" v:groupContext="shape" transform="translate(28.5827,863.757)">
+			<g id="shape17-41" v:mID="17" v:groupContext="shape" transform="translate(28.5827,868.009)">
 				<title>工作表.17</title>
 			</g>
 			<g id="shape18-43" v:mID="18" v:groupContext="shape" transform="translate(1690.65,1647.78) rotate(90)">
 				<title>工作表.18</title>
-				<path d="M0 1647.78 L846.14 1647.78" class="st2"/>
+				<path d="M0 1647.78 L850.39 1647.78" class="st2"/>
 			</g>
 			<g id="shape14-46" v:mID="14" v:groupContext="groupContent">
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
@@ -197,7 +197,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="54.7441" cy="1640.69" width="72.01" height="17.6036"/>
 			<path d="M0 1640.69 L102.53 1640.69" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="24.7432" y="1635.89" width="60.0018" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="24.7432" y="1635.89" width="60.0018" height="9.59985" class="st7"/>
 			<text x="24.74" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>payment request</text>		</g>
 		<g id="shape25-69" v:mID="25" v:groupContext="shape" v:layerMember="0" transform="translate(304.37,-1457.86)">
 			<title>自关联消息</title>
@@ -211,7 +211,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="7.08661" cy="1661.95" width="124.01" height="17.6036"/>
 			<path d="M7.09 1647.78 L25.09 1647.78 L25.09 1676.13 L14.05 1676.13" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="-48.9151" y="1657.15" width="112.003" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-48.9151" y="1657.15" width="112.003" height="9.59985" class="st7"/>
 			<text x="-48.92" y="1664.35" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>basic parameter verification</text>		</g>
 		<g id="shape26-76" v:mID="26" v:groupContext="shape" v:layerMember="0" transform="translate(304.37,-1415.34)">
 			<title>自关联消息.26</title>
@@ -225,7 +225,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="7.08661" cy="1664.79" width="84.01" height="17.6036"/>
 			<path d="M7.09 1647.78 L25.09 1647.78 L25.09 1681.8 L14.05 1681.8" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="-28.9145" y="1659.99" width="72.0022" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-28.9145" y="1659.99" width="72.0022" height="9.59985" class="st7"/>
 			<text x="-28.91" y="1667.19" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>verify user status</text>		</g>
 		<g id="shape27-83" v:mID="27" v:groupContext="shape" v:layerMember="0" transform="translate(304.37,-1358.65)">
 			<title>自关联消息.27</title>
@@ -239,7 +239,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="7.08661" cy="1661.95" width="100.01" height="17.6036"/>
 			<path d="M7.09 1647.78 L25.09 1647.78 L25.09 1676.13 L14.05 1676.13" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="-36.9148" y="1657.15" width="88.0027" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-36.9148" y="1657.15" width="88.0027" height="9.59985" class="st7"/>
 			<text x="-36.91" y="1664.35" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>Return payment methods</text>		</g>
 		<g id="shape28-90" v:mID="28" v:groupContext="shape" v:layerMember="0" transform="translate(96.378,-1305.21)">
 			<title>消息.29.28</title>
@@ -253,7 +253,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="107.717" cy="1640.69" width="100.01" height="17.6036"/>
 			<path d="M0 1641.12 L208.47 1640.3" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="63.7152" y="1635.89" width="88.0027" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="63.7152" y="1635.89" width="88.0027" height="9.59985" class="st7"/>
 			<text x="63.72" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>select payment methods</text>		</g>
 		<g id="shape30-97" v:mID="30" v:groupContext="shape" v:layerMember="0" transform="translate(311.457,-1124.79)">
 			<title>消息.29.30</title>
@@ -267,11 +267,11 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="51.2008" cy="1640.69" width="72.01" height="17.6036"/>
 			<path d="M0 1640.69 L95.44 1640.69" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="21.1998" y="1635.89" width="60.0018" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="21.1998" y="1635.89" width="60.0018" height="9.59985" class="st7"/>
 			<text x="21.2" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>payment request</text>		</g>
 		<g id="shape33-104" v:mID="33" v:groupContext="shape" v:layerMember="0" transform="translate(418.11,-1096.44)">
 			<title>自关联消息.33</title>
-			<desc>Comeplete payment on online banking pages</desc>
+			<desc>process payment</desc>
 			<v:userDefs>
 				<v:ud v:nameU="IsReturn" v:prompt="" v:val="VT0(0):5"/>
 				<v:ud v:nameU="IsAsync" v:prompt="" v:val="VT0(0):26"/>
@@ -279,10 +279,10 @@
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="7.08661" cy="1661.95" width="176.01" height="17.6036"/>
+			<v:textRect cx="7.08661" cy="1661.95" width="72.01" height="17.6036"/>
 			<path d="M7.09 1647.78 L25.09 1647.78 L25.09 1676.13 L14.05 1676.13" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="-74.9159" y="1657.15" width="164.005" height="9.59985" class="st9"/>
-			<text x="-74.92" y="1664.35" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>Comeplete payment on online banking pages</text>		</g>
+			<rect v:rectContext="textBkgnd" x="-22.9143" y="1657.15" width="60.0018" height="9.59985" class="st7"/>
+			<text x="-22.91" y="1664.35" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>process payment</text>		</g>
 		<g id="shape34-111" v:mID="34" v:groupContext="shape" v:layerMember="0" transform="translate(413.858,-1039.75)">
 			<title>返回消息.34</title>
 			<desc>return payment result</desc>
@@ -294,8 +294,8 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="-51.2008" cy="1640.69" width="96.01" height="17.6036"/>
-			<path d="M0 1640.69 L-102.4 1640.69" class="st10"/>
-			<rect v:rectContext="textBkgnd" x="-93.2021" y="1635.89" width="84.0026" height="9.59985" class="st9"/>
+			<path d="M0 1640.69 L-102.4 1640.69" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-93.2021" y="1635.89" width="84.0026" height="9.59985" class="st7"/>
 			<text x="-93.2" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>return payment result</text>		</g>
 		<g id="shape35-119" v:mID="35" v:groupContext="shape" v:layerMember="0" transform="translate(311.811,-742.11)">
 			<title>返回消息.35</title>
@@ -308,8 +308,8 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="-53.8583" cy="1640.69" width="108.01" height="17.6036"/>
-			<path d="M0 1640.69 L-107.72 1640.69" class="st10"/>
-			<rect v:rectContext="textBkgnd" x="-101.86" y="1635.89" width="96.0029" height="9.59985" class="st9"/>
+			<path d="M0 1640.69 L-107.72 1640.69" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-101.86" y="1635.89" width="96.0029" height="9.59985" class="st7"/>
 			<text x="-101.86" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>Synchronous notification</text>		</g>
 		<g id="group38-126" transform="translate(473.386,-1535.81)" v:mID="38" v:groupContext="group">
 			<v:userDefs>
@@ -327,12 +327,12 @@
 				<title>工作表.40</title>
 				<path d="M8.5 1647.78 a0 0 0 1 1 0 0 a0 0 0 1 1 0 0 Z" class="st1"/>
 			</g>
-			<g id="shape41-131" v:mID="41" v:groupContext="shape" transform="translate(29.2913,1016.21)">
+			<g id="shape41-131" v:mID="41" v:groupContext="shape" transform="translate(29.2913,863.453)">
 				<title>工作表.41</title>
 			</g>
 			<g id="shape42-133" v:mID="42" v:groupContext="shape" transform="translate(1691.72,1647.78) rotate(90)">
 				<title>工作表.42</title>
-				<path d="M0 1647.78 L996.06 1647.78" class="st2"/>
+				<path d="M0 1647.78 L843.31 1647.78" class="st2"/>
 			</g>
 			<g id="shape38-136" v:mID="38" v:groupContext="groupContent">
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
@@ -346,7 +346,7 @@
 			</v:userDefs>
 			<title>可选片段.49</title>
 			<g id="shape49-140" v:mID="49" v:groupContext="groupContent">
-				<rect x="0" y="1534.39" width="429.449" height="113.386" class="st11"/>
+				<rect x="0" y="1534.39" width="429.449" height="113.386" class="st10"/>
 			</g>
 			<g id="shape50-142" v:mID="50" v:groupContext="shape" transform="translate(0,-95.7823)">
 				<title>工作表.50</title>
@@ -360,8 +360,8 @@
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="32" cy="1638.98" width="64" height="17.6036"/>
-				<path d="M0 1647.78 L56.91 1647.78 L64 1640.69 L64 1630.18 L0 1630.18 L0 1647.78 Z" class="st12"/>
-				<text x="4" y="1641.38" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>Selection</text>			</g>
+				<path d="M0 1647.78 L56.91 1647.78 L64 1640.69 L64 1630.18 L0 1630.18 L0 1647.78 Z" class="st11"/>
+				<text x="4" y="1641.38" class="st12" v:langID="2052"><v:paragraph/><v:tabList/>Selection</text>			</g>
 			<g id="shape51-145" v:mID="51" v:groupContext="shape" transform="translate(0,-78.1787)">
 				<title>工作表.51</title>
 				<desc>Select online banking payment</desc>
@@ -378,7 +378,7 @@
 			</v:userDefs>
 			<title>可选片段</title>
 			<g id="shape52-148" v:mID="52" v:groupContext="groupContent">
-				<rect x="0" y="1513.13" width="467.717" height="134.646" class="st11"/>
+				<rect x="0" y="1513.13" width="467.717" height="134.646" class="st10"/>
 			</g>
 			<g id="shape53-150" v:mID="53" v:groupContext="shape" transform="translate(0,-117.042)">
 				<title>工作表.53</title>
@@ -392,8 +392,8 @@
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="32" cy="1638.98" width="64" height="17.6036"/>
-				<path d="M0 1647.78 L56.91 1647.78 L64 1640.69 L64 1630.18 L0 1630.18 L0 1647.78 Z" class="st12"/>
-				<text x="4" y="1641.38" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>Selection</text>			</g>
+				<path d="M0 1647.78 L56.91 1647.78 L64 1640.69 L64 1630.18 L0 1630.18 L0 1647.78 Z" class="st11"/>
+				<text x="4" y="1641.38" class="st12" v:langID="2052"><v:paragraph/><v:tabList/>Selection</text>			</g>
 			<g id="shape54-153" v:mID="54" v:groupContext="shape" transform="translate(0,-99.4385)">
 				<title>工作表.54</title>
 				<desc>Select WechatPay or Alipay</desc>
@@ -416,7 +416,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="102.933" cy="1654.87" width="72.01" height="17.6036"/>
 			<path d="M0 1651.32 L198.91 1658.17" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="72.9321" y="1650.07" width="60.0018" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="72.9321" y="1650.07" width="60.0018" height="9.59985" class="st7"/>
 			<text x="72.93" y="1657.27" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>payment request</text>		</g>
 		<g id="shape56-162" v:mID="56" v:groupContext="shape" v:layerMember="0" transform="translate(510.236,-1238.17)">
 			<title>返回消息.38</title>
@@ -429,8 +429,8 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="-99.3898" cy="1640.69" width="116.01" height="17.6036"/>
-			<path d="M0 1640.69 L-198.78 1640.69" class="st10"/>
-			<rect v:rectContext="textBkgnd" x="-151.391" y="1635.89" width="104.003" height="9.59985" class="st9"/>
+			<path d="M0 1640.69 L-198.78 1640.69" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-151.391" y="1635.89" width="104.003" height="9.59985" class="st7"/>
 			<text x="-151.39" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>return QR code information</text>		</g>
 		<g id="shape58-169" v:mID="58" v:groupContext="shape" v:layerMember="0" transform="translate(304.37,-1231.09)">
 			<title>自关联消息.40</title>
@@ -444,7 +444,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="7.08661" cy="1661.95" width="76.01" height="17.6036"/>
 			<path d="M7.09 1647.78 L25.09 1647.78 L25.09 1676.13 L14.05 1676.13" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="-24.9144" y="1657.15" width="64.002" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-24.9144" y="1657.15" width="64.002" height="9.59985" class="st7"/>
 			<text x="-24.91" y="1664.35" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>Generate QR code</text>		</g>
 		<g id="shape59-176" v:mID="59" v:groupContext="shape" v:layerMember="0" transform="translate(96.378,-1181.48)">
 			<title>消息.37.59</title>
@@ -458,7 +458,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="107.539" cy="1640.69" width="88.01" height="17.6036"/>
 			<path d="M0 1640.69 L208.12 1640.69" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="69.5382" y="1635.89" width="76.0023" height="9.59985" class="st7"/>
+			<rect v:rectContext="textBkgnd" x="69.5382" y="1635.89" width="76.0023" height="9.59985" class="st13"/>
 			<text x="69.54" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>Scan and do payment</text>		</g>
 		<g id="group60-183" transform="translate(70.8661,-922.677)" v:mID="60" v:groupContext="group">
 			<v:userDefs>
@@ -466,7 +466,7 @@
 			</v:userDefs>
 			<title>可选片段.60</title>
 			<g id="shape60-184" v:mID="60" v:groupContext="groupContent">
-				<rect x="0" y="1545.59" width="430.866" height="102.189" class="st11"/>
+				<rect x="0" y="1545.59" width="430.866" height="102.189" class="st10"/>
 			</g>
 			<g id="shape61-186" v:mID="61" v:groupContext="shape" transform="translate(0,-84.5854)">
 				<title>工作表.61</title>
@@ -480,8 +480,8 @@
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="32" cy="1638.98" width="64" height="17.6036"/>
-				<path d="M0 1647.78 L56.91 1647.78 L64 1640.69 L64 1630.18 L0 1630.18 L0 1647.78 Z" class="st12"/>
-				<text x="4" y="1641.38" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>Selection</text>			</g>
+				<path d="M0 1647.78 L56.91 1647.78 L64 1640.69 L64 1630.18 L0 1630.18 L0 1647.78 Z" class="st11"/>
+				<text x="4" y="1641.38" class="st12" v:langID="2052"><v:paragraph/><v:tabList/>Selection</text>			</g>
 			<g id="shape62-189" v:mID="62" v:groupContext="shape" transform="translate(0,-66.9818)">
 				<title>工作表.62</title>
 				<desc>Select bank card payment</desc>
@@ -494,7 +494,7 @@
 		</g>
 		<g id="shape63-191" v:mID="63" v:groupContext="shape" v:layerMember="0" transform="translate(96.378,-1103.53)">
 			<title>消息.37.63</title>
-			<desc>用户在网银端完成付款</desc>
+			<desc>complete payment on online banking page</desc>
 			<v:userDefs>
 				<v:ud v:nameU="IsReturn" v:prompt="" v:val="VT0(0):5"/>
 				<v:ud v:nameU="IsAsync" v:prompt="" v:val="VT0(0):26"/>
@@ -502,10 +502,10 @@
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="162.283" cy="1640.69" width="92.01" height="17.6036"/>
+			<v:textRect cx="162.283" cy="1640.69" width="168.01" height="17.6036"/>
 			<path d="M0 1640.69 L317.61 1640.69" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="122.284" y="1635.89" width="79.9997" height="9.59985" class="st7"/>
-			<text x="122.28" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>用户在网银端完成付款</text>		</g>
+			<rect v:rectContext="textBkgnd" x="84.2811" y="1635.89" width="156.005" height="9.59985" class="st7"/>
+			<text x="84.28" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>complete payment on online banking page</text>		</g>
 		<g id="shape65-198" v:mID="65" v:groupContext="shape" v:layerMember="0" transform="translate(96.378,-983.055)">
 			<title>消息.37.65</title>
 			<desc>User input required information</desc>
@@ -518,7 +518,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="107.539" cy="1640.69" width="136.01" height="17.6036"/>
 			<path d="M0 1640.69 L208.12 1640.69" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="45.5375" y="1635.89" width="124.004" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="45.5375" y="1635.89" width="124.004" height="9.59985" class="st13"/>
 			<text x="45.54" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>User input required information</text>		</g>
 		<g id="shape67-205" v:mID="67" v:groupContext="shape" v:layerMember="0" transform="translate(311.811,-968.882)">
 			<title>异步消息.41</title>
@@ -545,8 +545,8 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="-54.7441" cy="1640.69" width="44.01" height="17.6036"/>
-			<path d="M0 1640.69 L-109.49 1640.69" class="st10"/>
-			<rect v:rectContext="textBkgnd" x="-70.7446" y="1635.89" width="32.001" height="9.59985" class="st9"/>
+			<path d="M0 1640.69 L-109.49 1640.69" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-70.7446" y="1635.89" width="32.001" height="9.59985" class="st7"/>
 			<text x="-70.74" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>Response</text>		</g>
 		<g id="group69-219" transform="translate(70.8661,-763.37)" v:mID="69" v:groupContext="group">
 			<v:userDefs>
@@ -554,7 +554,7 @@
 			</v:userDefs>
 			<title>可选片段.69</title>
 			<g id="shape69-220" v:mID="69" v:groupContext="groupContent">
-				<rect x="0" y="1520.22" width="430.866" height="127.559" class="st11"/>
+				<rect x="0" y="1520.22" width="430.866" height="127.559" class="st10"/>
 			</g>
 			<g id="shape70-222" v:mID="70" v:groupContext="shape" transform="translate(0,-109.955)">
 				<title>工作表.70</title>
@@ -568,8 +568,8 @@
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="32" cy="1638.98" width="64" height="17.6036"/>
-				<path d="M0 1647.78 L56.91 1647.78 L64 1640.69 L64 1630.18 L0 1630.18 L0 1647.78 Z" class="st12"/>
-				<text x="4" y="1641.38" class="st13" v:langID="2052"><v:paragraph/><v:tabList/>Selection</text>			</g>
+				<path d="M0 1647.78 L56.91 1647.78 L64 1640.69 L64 1630.18 L0 1630.18 L0 1647.78 Z" class="st11"/>
+				<text x="4" y="1641.38" class="st12" v:langID="2052"><v:paragraph/><v:tabList/>Selection</text>			</g>
 			<g id="shape71-225" v:mID="71" v:groupContext="shape" transform="translate(0,-92.3519)">
 				<title>工作表.71</title>
 				<desc>Select Balance Payment(E-wallet user)</desc>
@@ -592,7 +592,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="107.539" cy="1640.69" width="120.01" height="17.6036"/>
 			<path d="M0 1640.69 L208.12 1640.69" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="53.5377" y="1635.89" width="108.003" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="53.5377" y="1635.89" width="108.003" height="9.59985" class="st13"/>
 			<text x="53.54" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>User input payment password</text>		</g>
 		<g id="shape73-234" v:mID="73" v:groupContext="shape" v:layerMember="0" transform="translate(304.724,-834.236)">
 			<title>自关联消息.40.73</title>
@@ -606,7 +606,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="7.08661" cy="1666.2" width="100.01" height="17.6036"/>
 			<path d="M7.09 1647.78 L25.09 1647.78 L25.09 1684.63 L14.05 1684.63" class="st5"/>
-			<rect v:rectContext="textBkgnd" x="-36.9148" y="1661.4" width="88.0027" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-36.9148" y="1661.4" width="88.0027" height="9.59985" class="st7"/>
 			<text x="-36.91" y="1668.6" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>Handle balance payment</text>		</g>
 		<g id="shape74-241" v:mID="74" v:groupContext="shape" v:layerMember="0" transform="translate(311.811,-713.764)">
 			<title>异步消息.41.74</title>
@@ -620,7 +620,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="-54.5669" cy="1640.69" width="112.01" height="17.6036"/>
 			<path d="M0 1640.69 L-109.13 1640.69" class="st14"/>
-			<rect v:rectContext="textBkgnd" x="-104.568" y="1635.89" width="100.003" height="9.59985" class="st9"/>
+			<rect v:rectContext="textBkgnd" x="-104.568" y="1635.89" width="100.003" height="9.59985" class="st13"/>
 			<text x="-104.57" y="1643.09" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>Asynchronous notification</text>		</g>
 	</g>
 </svg>

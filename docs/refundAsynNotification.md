@@ -12,11 +12,11 @@ Refund Asynchronous Notification is sent out whenever the status of refund is co
 
 |Name|Required|Type|Description|
 |---|---|---|---|
-|oid_partner|Required|String(18)|The unique identification assigned to the merchant. e.g. 201304121000001004|
+|oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |no_refund|Optional|String(32)|Refund No. in your system. It is recommended to set a different value from ```no_order```|
-|dt_refund|Optional|String(14)|Refund date. Format: YYYYMMDDHHMMSS, e.g. 20170801225714|
+|dt_refund|Optional|String(14)|Refund date. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
 |money_refund|Optional|String(12)|Refund amount. Refund amount should be less than or equal to the amount of original ```no_order```, range: 0.01 ~ 100,000,000.00, 2 decimal places are expected, in CNY|
 |oid_refundno|Optional|String(16)| Unique refund transaction No. in LianLian system |
 |sta_refund|Optional|String(1) | 0, refund initialized <br> 1, refund processing <br> 2, refund success <br> 3, refund failed |

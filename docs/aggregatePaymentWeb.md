@@ -17,20 +17,20 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 |Name|Required|Type|Description|
 |---|---|---|---|
 |version|Required|String|Fixed value, ```1.1```|
-|oid_partner|Required|String(18)|The unique identification assigned to the merchant. e.g. 201304121000001004|
+|oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |user_id|Required|String(32)|The unique identification assigned to the user in the merchant’s system|
-|timestamp|Required|String(14)|The time when request is initialized. Format: YYYYMMDDHHMMSS, e.g. 20170801225714|
+|timestamp|Required|String(14)|The time when request is initialized. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |busi_partner|Required|String(6)|Fixed value. Virtual products, ```101001```; Physical products, ```109001```|
 |no_order|Required|String(32)|Merchant order No.|
-|dt_order|Required|String(14)|Merchant order date. Format: YYYYMMDDHHMMSS, e.g. 20170801225714|
-|name_goods|Required|String(40)|Product name. e.g. Pen|
+|dt_order|Required|String(14)|Merchant order date. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
+|name_goods|Required|String(40)|Product name. E.g. Pen|
 |info_order|Optional|String(255)|```info_order``` will be sent back in synchronous or asynchronous notification for parameters transmission|
 |money_order|Required|String(12)|Merchant order amount, range: 0.01 ~ 100,000,000.00, 2 decimal places are expected, in CNY|
-|notify_url|Required|String(128)|Online url where asynchronous notification should be sent, e.g. http://www.lianlianpay.com/help/notify|
+|notify_url|Required|String(128)|Online url where asynchronous notification should be sent, E.g. http://www.lianlianpay.com/help/notify|
 |url_return|Optional|String(128)|Online url, your customer will be redirected to ```url_return``` once they finished their payment|
-|userreq_ip|Required|String(32)|The IP address of your customer, used for anti-fraud purpose. Replace "." with "_", e.g. 122_11_37_211|
+|userreq_ip|Required|String(32)|The IP address of your customer, used for anti-fraud purpose. Replace "." with "_", E.g. 122_11_37_211|
 |url_order|Optional|String(255)|Online url of products|
 |valid_order|Optional|Int|The valid period of ```no_order```, in minute. The status of corresponding transaction will be set to "Closed" once its ```valid_order``` run out. Default: 10080 (7 days). |
 |risk_item|Required|String| This parameter is used for payment risk control, all required parameters should be included in the value of ```risk_item``` in json format| 

@@ -13,7 +13,7 @@ https://queryapi.lianlianpay.com/bankcardbin.htm
 |Name|Required|Type|Description|
 |---|---|---|---|
 |api_version|Optional|String(6)| Fixed value: 1.0|
-|oid_partner|Required|String(18)|The unique identification assigned to the merchant. e.g. 201304121000001004|
+|oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |card_no|Required|String| Card number|

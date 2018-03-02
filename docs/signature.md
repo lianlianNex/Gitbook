@@ -12,7 +12,7 @@ There are two sets of public and private keys, one from merchant and another one
 
 ###### Signature Source
 
-In order to build signature source, remove parameters whose value is empty and then put all needed the parameters with format ```{key}={value}``` and connect them with ```&``` character together in ascending order of the first letter. e.g.
+In order to build signature source, remove parameters whose value is empty and then put all needed the parameters with format ```{key}={value}``` and connect them with ```&``` character together in ascending order of the first letter. E.g.
 
 ```html
 busi_partner=101001&dt_order=20130516131212&info_order=用户13958069593购买了3桶羽毛球&money_order=210.97&name_goods=羽毛球&no_order=20130516000000001&notify_url=http://payhttp.xiaofubao.com/***/back.shtml&oid_partner=201304121000001004&sign_type=RSA
@@ -39,7 +39,7 @@ Convert ```rsa_private_key.pem``` in the format of PKCS8.
 openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt
 ```
 
-Remove the header, footer, line breaks of the output and save it. e.g.
+Remove the header, footer, line breaks of the output and save it. E.g.
 
 ```html
 MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBALrnBQVM/VUTaECLW/VaMfJK4Lb6WZaL6Iy6MYWr0D4rSk3VU/33LvubRPUQAylWUpT8sgaHb2bkPl+1+DAvAELoR+2yIGRNq6X6oqAR/Drv/b6MOokzEGq9KxOQM44aRHgwBEbDTt1IWFIj241A5WBJpmrLLnyKAZm7jTmCmITpAgMBAAECgYBFuxlZb+74RcRYiGXntR37WspaGi9AhrRdhL4jNAX+m+IeBeBPWWCTCMwCblXvn0AyS9ETtIXwqmlHBjoxp+d9atLEyFN2GMu811gvfWTrK2LKQxO+eo5ulpJKuSAQkpz7bZzq5ByG8vlT8QZ+YKCp/7XCHto2PHtA2YO7CeR8gQJBAPL64oEfRsEi+NxOYN7mBeUPEcH1HCQ9hBcVaatSzWcdnJP/MCcL7V7Y02zwCJQxBSIbU5d/5brCEtVzMWLGupECQQDE6uHCzk+aWx1trioOAiwegENL7jy3E40cJ7ie8OvkP/mJZpbjNjSBefpsY/semzjBwd77hJKH0+SIpB/KTmDZAkB23e+DFYbqoy41sI5JXSRTG50nUr7Sp9l/5XTNYHOl12GrMTMgVwBn3xEHgSHhRV3qgo3RVrtPMvQ9wd3OIcRRAkBZucTg5Oz0omvIXEGhXHAJ/dusL4POz8POfnLrSU/TEyt65hn+seY+0PvAg9Ya3hOAhfw6ku/JoE1TzaUGo6wRAkEAr4e9y/swoH7SiDtuvCNHLha2sSDdmNVDWzWpvGNiomST17W2UuXxaLmFPZB5+Jd3bGndppYFsVKAD6Qf3ECBHQ==

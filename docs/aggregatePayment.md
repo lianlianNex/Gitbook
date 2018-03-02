@@ -15,6 +15,6 @@ This document is targeted to people who are capable of web development and under
 
 ***
 
-## Data Flow
+## Flow
 
 ![](/textures/aggregate_web_flow.svg)

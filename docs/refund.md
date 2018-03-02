@@ -16,16 +16,16 @@ https://traderapi.lianlianpay.com/refund.htm
 
 |Name|Required|Type|Description|
 |---|---|---|---|
-|oid_partner|Required|String(18)|The unique identification assigned to the merchant. e.g. 201304121000001004|
+|oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |no_refund|Required|String(32)|Refund No. in your system. It is recommended to set a different value from ```no_order```|
-|dt_refund|Required|String(14)|Refund date. Format: YYYYMMDDHHMMSS, e.g. 20170801225714|
+|dt_refund|Required|String(14)|Refund date. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
 |money_refund|Required|String(12)|Refund amount. Refund amount should be less than or equal to the amount of original ```no_order```, range: 0.01 ~ 100,000,000.00, 2 decimal places are expected, in CNY|
 |no_order|Optional|String(32)|Original merchant order No. Either ```no_order``` or ```oid_paybill``` is required for refund|
-|dt_order|Optional|String(14)|Original merchant order date. Format: YYYYMMDDHHMMSS, e.g. 20170801225714|
-|oid_paybill|Optional|String(32)|Original unique transaction No. in LianLian system. e.g. 2011030900001098. Either ```no_order``` or ```oid_paybill``` is required for refund |
-|notify_url|Required|String(128)|Online url where asynchronous notification should be sent, e.g. http://www.lianlianpay.com/help/notify|
+|dt_order|Optional|String(14)|Original merchant order date. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
+|oid_paybill|Optional|String(32)|Original unique transaction No. in LianLian system. E.g. 2011030900001098. Either ```no_order``` or ```oid_paybill``` is required for refund |
+|notify_url|Required|String(128)|Online url where asynchronous notification should be sent, E.g. http://www.lianlianpay.com/help/notify|
 
 ###### Sample Request
 
@@ -58,7 +58,7 @@ curl https://traderapi.lianlianpay.com/refund.htm \
 |ret_msg|Required|String(100)|Return message, description of ```ret_code```, in Chinese |
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
-|oid_partner|Required|String(18)|The unique identification assigned to the merchant. e.g. 201304121000001004|
+|oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |no_refund|Optional|String(32)|Refund No. in your system. It is recommended to set a different value from ```no_order```|
 |money_refund|Optional|String(12)|Refund amount. Refund amount should be less than or equal to the amount of original ```no_order```, range: 0.01 ~ 100,000,000.00, 2 decimal places are expected, in CNY|
 |oid_refundno|Optional|String(16)| Unique refund transaction No. in LianLian system |

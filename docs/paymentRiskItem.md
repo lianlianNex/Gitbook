@@ -16,7 +16,7 @@ Risk parameters is related to below keys:
 
 * The products your have integrated. For merchants who have integrated Verified Payment, [real-name parameters](#real-name-parameters) is required.
 
-All risk parameters ought to be set in a json format and assigned to ```risk_item```, e.g.
+All risk parameters ought to be set in a json format and assigned to ```risk_item```, E.g.
 
 ```json
 {
