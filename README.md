@@ -5,7 +5,7 @@ Aggregate Payment provides you a standard form which accepts payment from below 
 * Express Payment.
 * Verified Payment. 
 * Online Bank Payment. 
-* Balance Payment.
+* Balance Payment. (For E-wallet users only)
 * Alipay.
 * WeChat Payment.
 
