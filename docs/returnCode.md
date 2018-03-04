@@ -1,692 +1,138 @@
 # Return Codes
 
-<table>
-   <tr>
-      <td>ret_code</td>
-      <td>ret_msg</td>
-      <td>description </td>
-   </tr>
-   <tr>
-      <td>0000</td>
-      <td>交易成功</td>
-      <td>Trade successfully</td>
-   </tr>
-   <tr>
-      <td>0106</td>
-      <td>签约银行卡信息查询失败</td>
-      <td>Failed to query the signed bank card info</td>
-   </tr>
-   <tr>
-      <td>1000</td>
-      <td>支付授权令牌失效或错误</td>
-      <td>It means that the token is invalid or wrong. The token will be invalid after half an hour. Preprocessed the payment to re-obtain the new token.</td>
-   </tr>
-   <tr>
-      <td>1001</td>
-      <td>商户请求签名错误</td>
-      <td>Illegal signature</td>
-   </tr>
-   <tr>
-      <td>1002</td>
-      <td>第三方单号重复</td>
-      <td>repeated order no</td>
-   </tr>
-   <tr>
-      <td>1003</td>
-      <td>正在支付中,请稍后</td>
-      <td>Contact Customer Service</td>
-   </tr>
-   <tr>
-      <td>1004</td>
-      <td>商户请求参数校验错误（具体参数名）</td>
-      <td>Incorrect parameter</td>
-   </tr>
-   <tr>
-      <td>1005</td>
-      <td>支付处理失败</td>
-      <td>For a variety of reasons, the payment failed, including the failure of the user signing , the lack of the balance, the restrictions of the banks </td>
-   </tr>
-   <tr>
-      <td>1006</td>
-      <td>支付单创建失败</td>
-      <td>Payment order creation failed </td>
-   </tr>
-   <tr>
-      <td>1007</td>
-      <td>网络链接繁忙</td>
-      <td>busy network link</td>
-   </tr>
-   <tr>
-      <td>1008</td>
-      <td>商户请求IP错误</td>
-      <td>Please whitelist your IP address.</td>
-   </tr>
-   <tr>
-      <td>[1012]</td>
-      <td>请求报文解析失败</td>
-      <td>Failed to resolve the request message.</td>
-   </tr>
-   <tr>
-      <td>1009</td>
-      <td>暂停商户支付服务，请联系连连银通客服</td>
-      <td>The merchant payment service was suspended for a variety of reasons </td>
-   </tr>
-   <tr>
-      <td>1014</td>
-      <td>日累计金额或笔数超限</td>
-      <td>Exceed the cumulative amount or number of transactions limits</td>
-   </tr>
-   <tr>
-      <td>1016</td>
-      <td>交易金额超限</td>
-      <td>The amount of the transaction is beyond the limit.</td>
-   </tr>
-   <tr>
-      <td>1019</td>
-      <td>单笔金额超限</td>
-      <td>The amount of a single transaction is beyond the limit.</td>
-   </tr>
-   <tr>
-      <td>1100</td>
-      <td>无效卡号</td>
-        <td>Invalid or unsupported card.</td>
-   </tr>
-   <tr>
-      <td>1101</td>
-      <td>卡已挂失</td>
-      <td>A lost bank card.</td>
-   </tr>
-   <tr>
-      <td>1102</td>
-      <td>无此发卡方</td>
-      <td>There's not this card issuer</td>
-   </tr>
-   <tr>
-      <td>1103</td>
-      <td>银行卡有效期或CVV2错误</td>
-      <td>Bank card validity or CVV2 is wrong. </td>
-   </tr>
-   <tr>
-      <td>1104</td>
-      <td>卡密码错误</td>
-      <td>Incorrect card password.</td>
-   </tr>
-   <tr>
-      <td>1105</td>
-      <td>卡号在黑名单中</td>
-      <td>The card no is in the blacklist or the card has been restricted</td>
-   </tr>
-   <tr>
-      <td>1106</td>
-      <td>允许的输入PIN次数超限</td>
-      <td>Too much times to input the incorrect password.</td>
-   </tr>
-   <tr>
-      <td>1107</td>
-      <td>您的银行卡暂不支持在线支付业务</td>
-      <td>Your bank card does not support online payment services. </td>
-   </tr>
-   <tr>
-      <td>1108</td>
-      <td>您输入的证件号、姓名或手机号有误</td>
-      <td>Incorrect ID no,name or phone no.</td>
-   </tr>
-   <tr>
-      <td>1109</td>
-      <td>卡号和证件号不符</td>
-      <td>The card number is inconsistent with the ID no.</td>
-   </tr>
-   <tr>
-      <td>1110</td>
-      <td>卡状态异常</td>
-      <td>Card status is abnormal </td>
-   </tr>
-   <tr>
-      <td>1111</td>
-      <td>交易异常，支付失败</td>
-      <td>The transaction is abnormal and failed.</td>
-   </tr>
-   <tr>
-      <td>1112</td>
-      <td>证件号有误</td>
-      <td>Incorrect ID no.</td>
-   </tr>
-   <tr>
-      <td>1113</td>
-      <td>持卡人姓名有误</td>
-      <td>Card holder name is incorrect.</td>
-   </tr>
-   <tr>
-      <td>1114</td>
-      <td>手机号有误</td>
-      <td>Incorrect phone no.</td>
-   </tr>
-   <tr>
-      <td>1115</td>
-      <td>该卡未预留手机号</td>
-      <td>The user's card is not bound to any phone number. </td>
-   </tr>
-   <tr>
-      <td>1200</td>
-      <td>用户选择的银行暂不支持，请重新选择其他银行进行支付/签约</td>
-      <td>unsupported bank</td>
-   </tr>
-   <tr>
-      <td>1201</td>
-      <td>银行卡变更失败</td>
-      <td>Failed to change the bank.</td>
-   </tr>
-   <tr>
-      <td>1202</td>
-      <td>银行卡查询失败</td>
-      <td>Faile to query the bank card.</td>
-   </tr>
-   <tr>
-      <td>1805</td>
-      <td>暂不支持该银行</td>
-      <td>unsupported bank</td>
-   </tr>
-   <tr>
-      <td>1900</td>
-      <td>短信码校验错误</td>
-      <td>Faild to verify the SMS identifying code </td>
-   </tr>
-   <tr>
-      <td>1901</td>
-      <td>短信码已失效</td>
-      <td>Invalid SMS identifying code</td>
-   </tr>
-   <tr>
-      <td>1902</td>
-      <td>该卡交易金额超出免密限额</td>
-      <td>Exceed the trade amount which require no password.</td>
-   </tr>
-   <tr>
-      <td>2003</td>
-      <td>支付单创建</td>
-      <td>Payment order created.</td>
-   </tr>
-   <tr>
-      <td>2004</td>
-      <td>签约处理中</td>
-      <td>The bank processing timeout or could not return final result synchronously.</td>
-   </tr>
-   <tr>
-      <td>2005</td>
-      <td>原交易已在进行处理，请勿重复提交</td>
-      <td>Repeated request for a transaction.</td>
-   </tr>
-   <tr>
-      <td>2006</td>
-      <td>交易已过期</td>
-      <td>exceed the order valid time</td>
-   </tr>
-   <tr>
-      <td>2007</td>
-      <td>交易已支付成功</td>
-      <td>The original transaction has been paid successfully. </td>
-   </tr>
-   <tr>
-      <td>2008</td>
-      <td>交易处理中</td>
-      <td>payment processing</td>
-   </tr>
-   <tr>
-      <td>3001</td>
-      <td>非法商户</td>
-      <td>Invalid merchant account</td>
-   </tr>
-   <tr>
-      <td>3002</td>
-      <td>用户生成错误</td>
-      <td>Failed to generate the user account. </td>
-   </tr>
-   <tr>
-      <td>3003</td>
-      <td>签约信息不存在</td>
-      <td>Signing information does not exist </td>
-   </tr>
-   <tr>
-      <td>3004</td>
-      <td>用户解约失败</td>
-      <td>Failed to cancel the user account</td>
-   </tr>
-   <tr>
-      <td>3005</td>
-      <td>查询跨度不得高于3个月</td>
-      <td>Please query records within three months.</td>
-   </tr>
-   <tr>
-      <td>3006</td>
-      <td>用户不存在</td>
-      <td>This user account does not exist.</td>
-   </tr>
-   <tr>
-      <td>3007</td>
-      <td>[user_id]查询不存在</td>
-      <td>This userid does not exist.</td>
-   </tr>
-   <tr>
-      <td>3008</td>
-      <td>查询截止日期错误</td>
-      <td>Incorrect expiration date.</td>
-   </tr>
-   <tr>
-      <td>3009</td>
-      <td>重复签约</td>
-      <td>Repeated signing</td>
-   </tr>
-   <tr>
-      <td>3010</td>
-      <td>商户支付权限不足</td>
-      <td>Service is not activated for this account</td>
-   </tr>
-   <tr>
-      <td>3011</td>
-      <td>用户签约信息不存在</td>
-      <td>The user signing info does not exist.</td>
-   </tr>
-   <tr>
-      <td>4000</td>
-      <td>解约失败，请联系发卡行</td>
-      <td>Failed to cancel agreement.Please contact the issuing bank.</td>
-   </tr>
-   <tr>
-      <td>5001</td>
-      <td>卡bin校验失败</td>
-      <td>Failed to identify the BIN.</td>
-   </tr>
-   <tr>
-      <td>5002</td>
-      <td>原始交易不存在</td>
-      <td>Trade does NOT exist.</td>
-   </tr>
-   <tr>
-      <td>5003</td>
-      <td>退款金额错误</td>
-      <td>Refund amount is inconsistent with the original trade amount.</td>
-   </tr>
-   <tr>
-      <td>5004</td>
-      <td>商户状态异常，无法退款</td>
-      <td>Merchant account status is abnormal so that refund cannnot be processed.</td>
-   </tr>
-   <tr>
-      <td>5005</td>
-      <td>退款失败，请重试</td>
-      <td>Failed to refund.</td>
-   </tr>
-   <tr>
-      <td>5006</td>
-      <td>商户账户余额不足</td>
-      <td>Insufficient account balance</td>
-   </tr>
-   <tr>
-      <td>5007</td>
-      <td>累计退款金额大于原交易金额</td>
-      <td>Accumulated refund amount exceeds the original trade amount.</td>
-   </tr>
-   <tr>
-      <td>5008</td>
-      <td>原交易未成功</td>
-      <td>The original trade was failed.</td>
-   </tr>
-   <tr>
-      <td>5501</td>
-      <td>大额行号查询失败</td>
-      <td>Failed to query the prcptcd.</td>
-   </tr>
-   <tr>
-      <td>5502</td>
-      <td>信用卡不支持提现</td>
-      <td>Credit card is unsupported to withdraw. </td>
-   </tr>
-   <tr>
-      <td>5503</td>
-      <td>商户提现权限不足</td>
-      <td>This merchant account hasn't enough right to withdraw.</td>
-   </tr>
-   <tr>
-      <td>5504</td>
-      <td>商户操作权限不足</td>
-      <td>Insufficient operating right.</td>
-   </tr>
-   <tr>
-      <td>5505</td>
-      <td>该银行未进行配置，请联系客服</td>
-      <td>This bank hasn't been configured.Please contact the service.</td>
-   </tr>
-   <tr>
-      <td>5506</td>
-      <td>商户备注解析失败</td>
-      <td>Failed to reslove the memo.</td>
-   </tr>
-   <tr>
-      <td>5601</td>
-      <td>支付方式和卡类型不匹配</td>
-       <td>Card type and the payment method do not match .</td>
-   </tr>
-   <tr>
-      <td>6001</td>
-      <td>卡余额不足</td>
-      <td>Insufficient fund in bank card.</td>
-   </tr>
-   <tr>
-      <td>6002</td>
-      <td>该卡号未成功进行首次验证</td>
-      <td>First validation of this card no failed.</td>
-   </tr>
-   <tr>
-      <td>6601</td>
-      <td>获取银行请求地址失败，请稍后重试</td>
-      <td>Obtain bank request url failed .Please try again.</td>
-   </tr>
-   <tr>
-      <td>7001</td>
-      <td>用户已存在</td>
-      <td>This user is already exsited.</td>
-   </tr>
-   <tr>
-      <td>7017</td>
-      <td>金额不正确</td>
-      <td>Invalid amount of money</td>
-   </tr>
-   <tr>
-      <td>7018</td>
-      <td>新增银行卡用户信息不一致</td>
-      <td>The user info of the new added bank card is inconsistent. </td>
-   </tr>
-   <tr>
-      <td>7119</td>
-      <td>分账信息有误（分期付定期扣款）</td>
-      <td>Incorrect shareing data.</td>
-   </tr>
-   <tr>
-      <td>7777</td>
-      <td>需要补全签约信息</td>
-      <td>Need to complete contract information.</td>
-   </tr>
-   <tr>
-      <td>8000</td>
-      <td>用户信息不存在</td>
-      <td>The user info doed not exist.</td>
-   </tr>
-   <tr>
-      <td>8001</td>
-      <td>文件异常</td>
-      <td>Abnormal file</td>
-   </tr>
-   <tr>
-      <td>8002</td>
-      <td>生成文件异常</td>
-      <td>Generate the file abnormally.</td>
-   </tr>
-   <tr>
-      <td>8003</td>
-      <td>解析文件异常</td>
-      <td>An exception is thrown when parsing the file.  </td>
-   </tr>
-   <tr>
-      <td>8006</td>
-      <td>汇兑异常</td>
-      <td>Exchange abnormally.</td>
-   </tr>
-   <tr>
-      <td>8010</td>
-      <td>付款人信息不存在</td>
-      <td>The payer information does not exist. </td>
-   </tr>
-   <tr>
-      <td>8099</td>
-      <td>实名认证失败</td>
-      <td>Authentication failed </td>
-   </tr>
-   <tr>
-      <td>8101</td>
-      <td>无此扣款计划信息</td>
-      <td>No such repayment schedul existed.</td>
-   </tr>
-   <tr>
-      <td>8102</td>
-      <td>当前扣款计划已执行，请勿重复执行</td>
-      <td>The deduction plan has been executed. Do not repeat it.</td>
-   </tr>
-   <tr>
-      <td>8103</td>
-      <td>还款计划通知短信发送失败</td>
-      <td>Send notification of the repayment schedul message failed.</td>
-   </tr>
-   <tr>
-      <td>8104</td>
-      <td>扣款失败</td>
-      <td>Failed to deduct money.</td>
-   </tr>
-   <tr>
-      <td>8105</td>
-      <td>变更还款次数超过限制</td>
-      <td>The number to change repayment plan exceeds the limit. </td>
-   </tr>
-   <tr>
-      <td>8106</td>
-      <td>该签约协议号未授权该扣款协议号进行扣款</td>
-      <td>The repayment plan has not been authorized by the agreement no. </td>
-   </tr>
-   <tr>
-      <td>8107</td>
-      <td>扣款计划校验失败</td>
-      <td>Deduction plan verification failed.</td>
-   </tr>
-   <tr>
-      <td>8108</td>
-      <td>变更计划失败</td>
-      <td>Failed to change the plan.</td>
-   </tr>
-   <tr>
-      <td>8109</td>
-      <td>计划保存失败</td>
-      <td>Failed to save the plan.</td>
-   </tr>
-   <tr>
-      <td>8110</td>
-      <td>验证码错误</td>
-      <td>Incorrect verification code.</td>
-   </tr>
-   <tr>
-      <td>8111</td>
-      <td>用户查询失败</td>
-      <td>Failed to query the user account.</td>
-   </tr>
-   <tr>
-      <td>8112</td>
-      <td>变更计划状态失败</td>
-      <td>Failed to change the repayment state. </td>
-   </tr>
-   <tr>
-      <td>8113</td>
-      <td>分期计划不存在</td>
-      <td>Installment plan does NOT exsited.  </td>
-   </tr>
-   <tr>
-      <td>8114</td>
-      <td>扣款方式不符</td>
-      <td>Incorrect pay type.</td>
-   </tr>
-   <tr>
-      <td>8115</td>
-      <td>还款卡授权失败</td>
-      <td>The repayment card failed to authorize the repayment plan.</td>
-   </tr>
-   <tr>
-      <td>8116</td>
-      <td>定时任务执行失败</td>
-      <td>The timing task execution failed.</td>
-   </tr>
-   <tr>
-      <td>8117</td>
-      <td>幂等检查异常</td>
-      <td>Idempotent check abnormaly</td>
-   </tr>
-   <tr>
-      <td>8888</td>
-      <td>短信已下发，需要再次验证</td>
-      <td>Need to do SMS validation again.</td>
-   </tr>
-   <tr>
-      <td>8901</td>
-      <td>没有记录</td>
-      <td>None record is obtained according to the provided query conditions </td>
-   </tr>
-   <tr>
-      <td>8911</td>
-      <td>没有风控记录</td>
-      <td>No record in risk contorl system.</td>
-   </tr>
-   <tr>
-      <td>9000</td>
-      <td>银行维护中，请稍后再试</td>
-      <td>Bank is in maintenance, please try again later. </td>
-   </tr>
-   <tr>
-      <td>9002</td>
-      <td>报文解析异常</td>
-      <td>An exception is thrown when parsing the message. </td>
-   </tr>
-   <tr>
-      <td>9091</td>
-      <td>创建支付失败</td>
-        <td>Failed to create payment order.</td>
-   </tr>
-   <tr>
-      <td>9092</td>
-      <td>支付单号与订单号不一致</td>
-      <td>oid_paybill is inconsistent with the no_order.</td>
-   </tr>
-   <tr>
-      <td>9093</td>
-      <td>无对应的支付单信息</td>
-      <td>No corresponding payment information.</td>
-   </tr>
-   <tr>
-      <td>9094</td>
-      <td>请求银行扣款失败</td>
-      <td>Failed to request the bank to deduct money. </td>
-   </tr>
-   <tr>
-      <td>9104</td>
-      <td>对公账户余额不足</td>
-      <td>When calling the payment interface, the merchant account balance to pay the company account is insufficient.</td>
-   </tr>
-   <tr>
-      <td>9700</td>
-      <td>短信验证码错误</td>
-      <td>Incorrect SMS verification code.</td>
-   </tr>
-   <tr>
-      <td>9701</td>
-      <td>短信验证码和手机不匹配</td>
-      <td>SMS verification code and mobile phone numbers do not match.</td>
-   </tr>
-   <tr>
-      <td>9702</td>
-      <td>验证码错误次数超过最大次数,请重新获取进行验证</td>
-      <td>Input incorrect verify code too much times.</td>
-   </tr>
-   <tr>
-      <td>9703</td>
-      <td>短信验证码失效,请重新获取</td>
-      <td>Invalid SMS verify code.Please obtain it again.</td>
-   </tr>
-   <tr>
-      <td>9704</td>
-      <td>短信发送异常,请稍后重试</td>
-      <td>Failed to send the SMS normally.Please try later.</td>
-   </tr>
-   <tr>
-      <td>9990</td>
-      <td>银行交易出错</td>
-      <td>Please contact our customer service  to check this error.</td>
-   </tr>
-   <tr>
-      <td>9901</td>
-      <td>请求报文非法</td>
-      <td>Invalid request message.</td>
-   </tr>
-   <tr>
-      <td>9902</td>
-      <td>接口调用异常</td>
-      <td>An exception is thrown when the interface is invoked.</td>
-   </tr>
-   <tr>
-      <td>9903</td>
-      <td>ret_msg":"请求无效，请稍后重试</td>
-      <td>Please contact our customer service  to check this error.</td>
-   </tr>
-   <tr>
-      <td>9907</td>
-      <td>银行编码与卡不一致</td>
-      <td>The bank code is inconsistent with the card.</td>
-   </tr>
-   <tr>
-      <td>9904</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>9910</td>
-      <td>风险等级过高</td>
-      <td>High risk level.</td>
-   </tr>
-   <tr>
-      <td>9911</td>
-      <td>金额超过指定额度</td>
-      <td>The amount over a specified amount </td>
-   </tr>
-   <tr>
-      <td>9912</td>
-      <td>暂不支持</td>
-      <td>Unsupported card.</td>
-   </tr>
-   <tr>
-      <td>9913</td>
-      <td>该卡已签约成功 </td>
-      <td>This card has alrealy signed up.</td>
-   </tr>
-   <tr>
-      <td>9920</td>
-      <td>退款失败</td>
-      <td>Failed to refund.</td>
-   </tr>
-   <tr>
-      <td>9921</td>
-      <td>退款查询失败</td>
-      <td>Failded to query the refund.</td>
-   </tr>
-   <tr>
-      <td>9970</td>
-      <td>银行系统日切处理中</td>
-      <td>The bank system is changing the time of the system to keep account.Please try later.</td>
-   </tr>
-   <tr>
-      <td>9983</td>
-      <td>商户订单号重复</td>
-      <td>The order number is repeated </td>
-   </tr>
-   <tr>
-      <td>9990</td>
-      <td>银行交易出错，{银行返回的错误信息}，请稍后重试</td>
-      <td>Please contact our customer service to check this issue.</td>
-   </tr>
-   <tr>
-      <td>9991</td>
-      <td>银行交易出错，请联系客服，客服热线客服热线：4000188888</td>
-      <td>Trade failed .Please contact service hotline :4000188888</td>
-   </tr>
-   <tr>
-      <td>9999</td>
-      <td>系统错误</td>
-      <td>system error</td>
-   </tr>
-   <tr>
-      <td></td>
-   </tr>
-</table>
+|Ret_code|Ret_msg|Description|
+|:---|:---|:---|
+|0000|交易成功|Request is handled successfully|
+|0106|签约银行卡信息查询失败|Failed to query the bind bank card info|
+|1000|支付授权令牌失效或错误|Invalid token. Token expires in half an hour, in this case, you need to redo the request to obtain a new token|
+|1001|商户请求签名错误|Invalid Signature|
+|1002|第三方单号重复|Duplicated ```no_order```|
+|1003|正在支付中,请稍后|Transaction is processing, contact our support if you encountered this issue|
+|1004|商户请求参数校验错误（具体参数名）|The parameter returned in parenthesis is invalid |
+|1005|支付处理失败|For a variety of reasons, the payment failed, including the failure of binding cards , insufficient money, the restrictions of the banks, etc |
+|1006|支付单创建失败|Payment order creation failed|
+|1007|网络链接繁忙|Internet connection failed|
+|1008|商户请求IP错误|Invalid IP address|
+|1009|暂停商户支付服务，请联系连连银通客服|The merchant payment service was suspended for a variety of reasons, contact our support if you encountered this issue|
+|1012|请求报文解析失败|Failed to parse the request body|
+|1014|日累计金额或笔数超限|Exceed the cumulative amount or number of transactions limits|
+|1016|交易金额超限|The amount of the transaction is beyond the limit|
+|1019|单笔金额超限|The amount of a single transaction is beyond the limit|
+|1100|无效卡号|Invalid ```card_no```|
+|1101|卡已挂失|A missing card is used|
+|1102|无此发卡方|The card issuer does NOT exist|
+|1103|银行卡有效期或CVV2错误|Invalid expired date or CVV2|
+|1104|卡密码错误|Incorrect card password|
+|1105|卡号在黑名单中|The card is in the blacklist or the card has been restricted|
+|1106|允许的输入PIN次数超限|The time of inputting PIN exceed the limit |
+|1107|您的银行卡暂不支持在线支付业务|Your bank card does not support online payment services|
+|1108|您输入的证件号、姓名或手机号有误|Incorrect ```id_no```, ```acct_name``` or ```mobile_bind```|
+|1109|卡号和证件号不符|Used ```card_no``` is inconsistent with the ```id_no```|
+|1110|卡状态异常|Abnormal card status|
+|1111|交易异常，支付失败|Payment failed due to abnormal issues|
+|1112|证件号有误|Incorrect ```id_no```|
+|1113|持卡人姓名有误|Incorrect ```acct_name```|
+|1114|手机号有误|Incorrect ```mobile_bind```|
+|1115|该卡未预留手机号|The user's card is not bound to any phone number|
+|1200|用户选择的银行暂不支持，请重新选择其他银行进行支付/签约|Unsupported bank, please choose other banks to complete the payment.
+|1201|银行卡变更失败|Card changing failed|
+|1202|银行卡查询失败|Card querying failed|
+|1805|暂不支持该银行|Unsupported bank|
+|1900|短信码校验错误|SMS verification failed|
+|1901|短信码已失效|SMS expired|
+|1902|该卡交易金额超出免密限额|The trade amount exceed the amount limit of no payment verification|
+|2003|支付单创建|Order created|
+|2004|签约处理中|Card bind action is processing|
+|2005|原交易已在进行处理，请勿重复提交|The original transaction is processing, please do NOT submit it again|
+|2006|交易已过期|The transaction is closed|
+|2007|交易已支付成功|The original transaction has been paid successfully|
+|2008|交易处理中|The transaction is processing|
+|3001|非法商户|Invalid ```oid_partner```|
+|3002|用户生成错误|User account creation failed|
+|3003|签约信息不存在|The used ```no_agree``` does NOT exit|
+|3004|用户解约失败|Card unbinding failed|
+|3005|查询跨度不得高于3个月|The period of querying is not allowed to exceed 3 months|
+|3006|用户不存在	|This user account does not exist|
+|3007|[user_id]查询不存在|This ```user_id``` does not exist|
+|3008|查询截止日期错误|The end date of querying is incorrect|
+|3009|重复签约|Duplicate bind card action|
+|3010|商户支付权限不足|The used ```oid_partner``` does NOT have proper payment access|
+|3011|用户签约信息不存在|The used ```no_agree``` of user does NOT exist|
+|4000|解约失败，请联系发卡行|Card unbinding failed. Please contact your card issuer|
+|5001|卡bin校验失败|Card bin identification failed|
+|5002|原始交易不存在|Original transaction does NOT exist|
+|5003|退款金额错误|Refund amount is inconsistent with the original transaction amount|
+|5004|商户状态异常，无法退款|Merchant status is abnormal, refund can NOT be processed|
+|5005|退款失败，请重试|Refund failed, please try again|
+|5006|商户账户余额不足|Insufficient balance of merchant account|
+|5007|累计退款金额大于原交易金额|Accumulated refund amount exceeds the original trade amount|
+|5008|原交易未成功|The original transaction is not paid successfully|
+|5501|大额行号查询失败|Prcptcd code querying failed|
+|5502|信用卡不支持提现|Withdraw is unsupported for credit card|
+|5503|商户提现权限不足|Your merchant account does NOT have access to withdraw|
+|5504|商户操作权限不足|Your merchant account does NOT have access to proceed operation|
+|5505|该银行未进行配置，请联系客服|This bank hasn't been configured. Please contact our supports|
+|5506|商户备注解析失败|```memo``` parsing failed|
+|5601|支付方式和卡类型不匹配|```pay_type``` does NOT match the used card type|
+|6001|卡余额不足|Insufficient fund in bank card|
+|6002|该卡号未成功进行首次验证|The ```card_no``` has NOT completed the first verification|
+|6601|获取银行请求地址失败，请稍后重试| Obtaining the endpoint of banks failed, please try again later|
+|7001|用户已存在|The used ```user_id``` exists already |
+|7017|金额不正确|Incorrect ```money_order```|
+|7018|新增银行卡用户信息不一致|The user info of the new added bank card is inconsistent|
+|7119|分账信息有误（分期付定期扣款）|Incorrect ```shareing_data```|
+|7777|需要补全签约信息|Need to complete contract information|
+|8000|用户信息不存在|No such user information|
+|8001|文件异常|Invalid file|
+|8002|生成文件异常|File generation failed|
+|8003|解析文件异常|An exception is thrown in parsing file|
+|8006|汇兑异常|An exception is thrown in exchanging funds|
+|8010|付款人信息不存在|The payer information does not exist|
+|8099|实名认证失败|Real-name authorization failed|
+|8101|无此扣款计划信息|No such repayment plan exists|
+|8102|当前扣款计划已执行，请勿重复执行|The selected repayment date has been executed|
+|8103|还款计划通知短信发送失败|Repayment plan notification SMS failed to send|
+|8104|扣款失败|Funds deduction failed|
+|8105|变更还款次数超过限制|The number to change repayment plan exceeds the limit|
+|8106|该签约协议号未授权该扣款协议号进行扣款|The repayment plan has not been authorized by the used ```no_agree```|
+|8107|扣款计划校验失败|The verification of repayment plan failed|
+|8108|变更计划失败|Changing repayment plan failed|
+|8109|计划保存失败|Failed to save repayment plan|
+|8110|验证码错误|Invalid verification code|
+|8111|用户查询失败|User querying failed|
+|8112|变更计划状态失败|Failed to change the repayment state|
+|8113|分期计划不存在|No such installment plan exists|
+|8114|扣款方式不符|Incorrect ```pay_type```|
+|8115|还款卡授权失败|The repayment card failed to authorize the repayment plan|
+|8116|定时任务执行失败|Scheduled task execution failed|
+|8117|幂等检查异常|An exception is thrown in idempotent check|
+|8888|短信已下发，需要再次验证|SMS code sent, another verification is required|
+|8901|没有记录|No such record exists|
+|8911|没有风控记录|No such payment risk record exists|
+|9000|银行维护中，请稍后再试|Selected bank is under maintenance, please try again later|
+|9002|报文解析异常|An exception is thrown in parsing requests|
+|9091|创建支付失败|Failed to create ```oid_paybill```|
+|9092|支付单号与订单号不一致|```oid_paybill``` is inconsistent with the ```no_order```|
+|9093|无对应的支付单信息|No corresponding payment information exists|
+|9094|请求银行扣款失败|Failed to deduct money from bank side|
+|9104|对公账户余额不足|Insufficient balance of business account|
+|9700|短信验证码错误|Incorrect SMS verification code|
+|9701|短信验证码和手机不匹配|SMS verification code and mobile phone numbers do not match|
+|9702|验证码错误次数超过最大次数,请重新获取进行验证|The time of SMS verification exceeds the limits, please re-obtain SMS verification code|
+|9703|短信验证码失效,请重新获取|SMS verifaction code expired, please re-obtain it|
+|9704|短信发送异常,请稍后重试|Failed to send SMS verification code, please try again later|
+|9901|请求报文非法|Invalid request body|
+|9902|接口调用异常|An exception is thrown when the interface is invoked|
+|9903|请求无效，请稍后重试|Invalid request, please try again later or contact our support|
+|9907|银行编码与卡不一致|The ```bank_code``` is inconsistent with the ```card_no```|
+|9901|风险等级过高|Payment is suspended due to high risk level|
+|9911|金额超过指定额度|The ```money_order``` has exceeded the specified amount|
+|9912|该卡暂不支持|The used card is unsupported|
+|9913|该卡已签约成功|This card has already been bound successfully|
+|9920|退款失败|Failed to refund|
+|9921|退款查询失败|Failed to query the refund|
+|9970|银行系统日切处理中|There are maintenance in bank system, please try again later|
+|9983|商户订单号重复|Duplicate ```no_order```|
+|9990|银行交易出错，{银行返回的错误信息}，请稍后重试|Failed to proceed transaction from bank side, please try again later or contact our support|
+|9991|银行交易出错，请联系客服，客服热线客服热线：4000188888|Failed to proceed transaction from bank side, please contact our support|
+|9999|系统错误|Internal system error|
