@@ -2,7 +2,7 @@
 
 Payment synchronous notification, a HTTP POST request, will be sent to ```url_return``` whenever the payment is confirmed as successful. 
 
-> Synchronous notification sends only once, we recommend you to use [asynchronous notification](//aggregateAsynNotification.html) or [payment status query API](docs/paymentStatusQuery.html) to obtain payment result.
+> Synchronous notification sends only once, we recommend you to use [asynchronous notification](/docs/aggregateAsynNotification.html) or [payment status query API](docs/paymentStatusQuery.html) to obtain payment result.
 
 ###### Parameters
 

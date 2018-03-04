@@ -1,6 +1,6 @@
 # Report
 
-Transaction reports are generated automatically by ```settle_date``` which is returned in [payment asynchronous notification](//aggregateAsynNotification.html) or the response of [payment status query API](//paymentStatusQuery.html) for successful payments.
+Transaction reports are generated automatically by ```settle_date``` which is returned in [payment asynchronous notification](/docs/aggregateAsynNotification.html) or the response of [payment status query API](/docs/paymentStatusQuery.html) for successful payments.
 
 LianLian provides 2 ways for you to obtain reports:
 
