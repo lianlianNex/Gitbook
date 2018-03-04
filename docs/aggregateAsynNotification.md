@@ -62,4 +62,4 @@ If we haven't received your response within 5 seconds or the response does NOT m
  
 Resending logic: 30 times in total with an interval of 2 minutes, until your server has correctly handled the notification. 
 
-But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [paymnet status query API](docs/paymentStatusQuery.html) by yourself. 
+But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [paymnet status query API](/paymentStatusQuery.html) by yourself. 
