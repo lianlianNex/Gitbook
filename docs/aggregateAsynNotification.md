@@ -1,14 +1,12 @@
 # Aggregate Payment Asynchronous Notification
 
-Once a payment request is processed, LianLian will send the results to the notification URL ```notify_url``` via server-side HTTP requests, which is wrote into *HttpInputStream*. You can choose one way to obtain parameters depending on your programming language:
-
-* PHP: ```file_get_contents("php://input");```
-* Java: ```request.getInputStream();```
-* C#: ```Request.inputStream;```
+Once a payment request is processed, LianLian will send the results to the notification URL ```notify_url``` via server-side HTTP requests, which is wrote into *HttpInputStream*. 
 
 > Your servers are informed of the successful result only. No notification will be sent for unsuccessful or abnormal transactions. 
 
-###### Parameters
+***
+
+## Parameters
 
 |Name|Required|Type|Description|
 |---|---|---|---|
@@ -47,7 +45,38 @@ Once a payment request is processed, LianLian will send the results to the notif
 
 ***
 
-## Handle asynchronous notification
+## Specification
+
+###### Obtain request message
+
+You can choose one way to obtain parameters depending on your programming language:
+
+* PHP: ```file_get_contents("php://input");```
+* Java: ```request.getInputStream();```
+* C#: ```Request.inputStream;```
+
+###### Requirement for ```notify_url```
+
+```notify_url``` must be an online url which is accessible for our server ip addresses of asynchronous notification:
+
+```html
+218.4.207.154–218.4.207.158
+112.80.55.210–112.80.55.214
+223.112.79.242–223.112.79.246
+115.238.110.126, 115.236.98.22, 211.140.27.205
+```
+
+> It is recommended to load your ```notify_url``` via HTTPS.
+
+###### Successful payment
+
+A successful payment always has below attributes:
+
+* Signature verified successfully. The signature in asynchronous notification are encrypted by the ```private key``` from LianLianPay, Inc., you need to use the corresponding ```public key``` to proceed with signature verification.
+
+* ```result_pay=SUCCESS```.
+
+###### Handle asynchronous notification
 
 LianLian expects you to respond asynchronous notification with below json object which means you have received our notification and proceeded with delivery logic:
 
@@ -58,8 +87,13 @@ LianLian expects you to respond asynchronous notification with below json object
 }
 ```
 
-If we haven't received your response within 5 seconds or the response does NOT match our expectation, asynchronous notification mechanism would mark the result as FAILURE and send it again. 
- 
-Resending logic: 30 times in total with an interval of 2 minutes, until your server has correctly handled the notification. 
+###### Asynchronous notification repeat
 
-But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [paymnet status query API](/docs/paymentStatusQuery.html) by yourself. 
+Assuming there is no issues from internet layer, if we haven't received your response within 5 seconds or the response does NOT match our expectation, asynchronous notification mechanism would mark the result as FAILURE and send it again. 
+
+Resending logic: 30 times in total with an interval of 2 minutes, until your server has correctly handled the notification. But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [paymnet status query API](/docs/paymentStatusQuery.html) by yourself. 
+
+However, there are few cases like internet traffic jam, network delay, packet loss or other causes which results in an unexpected phenomenon, that your server has received 2 same asynchronous notification for a same transaction. In case of it, you **MUST** have the capability to handle duplicated asynchronous notifications, respond them with the expected response of LianLian but proceed your successful logic only **ONCE**. The financial risks which caused by repeated asynchronous notification borne by yourselves.
+
+
+          
