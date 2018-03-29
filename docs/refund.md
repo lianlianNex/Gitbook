@@ -54,7 +54,7 @@ curl https://traderapi.lianlianpay.com/refund.htm \
 
 |Name|Required|Type|Description|
 |---|---|---|---|
-|ret_code|Required|String(4)|Return code, whether the request is handled successfully or not|
+|ret_code|Required|String(4)|Return code, whether the request is handled successfully or not. Refer to [return codes](return_code.md)|
 |ret_msg|Required|String(100)|Return message, description of ```ret_code```, in Chinese |
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|

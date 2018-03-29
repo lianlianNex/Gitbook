@@ -1,12 +1,13 @@
 # Report
 
-Transaction reports are generated automatically by ```settle_date``` which is returned in [payment asynchronous notification](/docs/aggregateAsynNotification.html) or the response of [payment status query API](/docs/paymentStatusQuery.html) for successful payments.
+Transaction reports are generated automatically by ```settle_date``` which is returned in [payment asynchronous notification](asyn_notification.md) for successful payments.
 
 LianLian provides 2 ways for you to obtain reports:
 
 * Download it from [merchant dashboard](https://b.lianlianpay.com/trader/login.htm).
 
 * Download it from Sftp servers. In order to obtain Sftp access, you need to contact [tech_support@yintong.com.cn](mailto:tech_support@yintong.com.cn).
+
 ***
 
 ## Sftp Reports

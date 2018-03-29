@@ -18,7 +18,7 @@ https: //traderapi.lianlianpay.com/bankcardunbind.htm
 |user_id|Required|String(32)|The unique identification assigned to the user in the merchant’s system|
 |platform|Optional|String(32)|Used for sharing user information between several ```oid_partner```, do NOT use it if you are not sure, or ask help from LianLian Supports|
 |pay_type|Optional|String| 2, Express Payment (Debit card) <br> 3, Express Payment (Credit card) <br> D, Verified Payment <br> By default the value is 2 |
-|no_agree|Required|String| Permanent token|
+|no_agree|Required|String| A token which represents the key payment information, refer to [Binding Card](easypay.md) for more details|
 
 ###### Sample Request
 
@@ -43,7 +43,7 @@ curl https: //traderapi.lianlianpay.com/bankcardunbind.htm \
 
 |Name|Required|Type|Description|
 |---|---|---|---|
-|ret_code|Required|String(4)|Return code, whether the request is handled successfully or not. For [Card Unbind API](#card-unbind-api), ```no_agree``` is removed if you have gotten ```ret_code=0000```|
+|ret_code|Required|String(4)|Return code, whether the request is handled successfully or not. For [Card Unbind API](#card-unbind-api), ```no_agree``` is removed if you have gotten ```ret_code=0000```. For other codes, refer to [return codes](return_code.md)|
 |ret_msg|Required|String(100)|Return message, description of ```ret_code```, in Chinese |
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|

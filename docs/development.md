@@ -28,7 +28,7 @@ This document is targeted to people who are capable of web development and under
 
 ###### Front-end payment
 
-The payment process are handled in pages hosted by LianLianPay, Inc. Implementation is limited to client-side by using ```<Form/>``` tag (like [aggregate web API](/docs/aggregatePaymentWeb.html))or mobile SDKs.
+The payment process are handled in pages hosted by LianLianPay, Inc. Implementation is limited to client-side by using redirect APIs.
 
 Steps:
 
@@ -49,9 +49,3 @@ Steps:
 ###### File transmission
 
 Mainly used in report services via Sftp.
-
-***
-
-## Flow
-
-![](/textures/aggregate_web_flow.svg)

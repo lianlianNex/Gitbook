@@ -1,4 +1,4 @@
-# Aggregate Web API
+# Aggregate Web Redirect API
 
 ###### Endpoint
 
@@ -33,7 +33,7 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 |userreq_ip|Required|String(32)|The IP address of your customer, used for anti-fraud purpose. Replace "." with "_", E.g. 122_11_37_211|
 |url_order|Optional|String(255)|Online url of products|
 |valid_order|Optional|Int|The valid period of ```no_order```, in minute. The status of corresponding transaction will be set to "Closed" once its ```valid_order``` run out. Default: 10080 (7 days). |
-|risk_item|Required|String| This parameter is used for payment risk control, all required parameters should be included in the value of ```risk_item``` in json format| 
+|risk_item|Required|String| This parameter is used for payment risk control, all required parameters should be included in the value of ```risk_item``` in json format, refer to [Payment Risk](payment_risk_item.md)| 
 |col_oidpartner|Optional|String(18)| ```oid_partner``` of recipient, which is mainly used in LianLian E-wallet. The value is set as ```oid_partner``` to which ```user_id``` belongs by default. |
 |col_userid|Optional|String(32)| ```user_id``` of recipient, which is mainly used in LianLian E-wallet. Note there is only one recipient, ```col_userid``` and ```col_oidparnter``` can not be used in a same request |
 |shareing_data|Optional|String(1024)| Refer to [Sharing data instruction](#sharing-data-instruction) |
@@ -80,3 +80,30 @@ Sharing_account^Sharing_account_type^Sharing_amount^Sharing_description|Sharing_
 * ```Sharing_account_type```, fixed value. 0 for LianLian E-wallet merchant, 1 for regular merchant.
 * ```Sharing_amount```, revenue sharing amount, 2 decimal places are expected, in CNY.
 * ```Sharing_description```, a short description for revenue sharing, no "^" nor "|", length: 85.
+
+***
+
+## Aggregate Payment Synchronous Notification
+
+Payment synchronous notification, a HTTP POST request, will be sent to ```url_return``` whenever the payment is confirmed as successful. 
+
+> Synchronous notification sends only once, we recommend you to use [asynchronous notification](asyn_notification.md) or [payment result query API](aggregate_payment_result_query.md) to obtain payment result.
+
+###### Parameters
+
+|Name|Required|Type|Description|
+|---|---|---|---|
+|oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
+|sign_type|Required|String(3)|RSA |
+|sign|Required|String|Signature value|
+|no_order|Required|String(32)|Merchant order No.|
+|dt_order|Required|String(14)|Merchant order date. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
+|oid_paybill|Required|String(18)|Unique transaction No. in LianLian system. E.g. 2011030900001098|
+|money_order|Required|String(12)|Merchant order amount, range: 0.01 ~ 100,000,000.00, 2 decimal places are expected, in CNY|
+|result_pay|Required|String| Payment result. E.g. SUCCESS|
+|settle_date|Optional|String(8)| Format YYYYMMDD. Returns when payment is successful|
+|info_order|Optional|String(255)| Returns when ```info_order``` is sent in API requests|
+|pay_type|Optional|String| The payment method used in this transaction. <br> 0, balance payment <br> 1, online banking payment (debit card) <br> 8, online banking payment (credit card) <br> 9, business online banking payment <br> 2, express payment (debit card) <br> 3, express payment (credit card)<br> D, verified payment <br> I, WeChat Payment <br> L, Alipay Payment| 
+|bank_code|Optional|String| Short codes of banks |
+
+There is no need to send response for synchronous notification.

@@ -1,15 +1,14 @@
-# Aggregate Payment
+# LianLianPay Documentation
 
-Aggregate Payment provides you a standard form which accepts payment from below payment methods:
+Welcome to LianLian.
 
-* Express Payment.
-* Verified Payment. 
-* Online Bank Payment. 
-* Balance Payment. (For E-wallet users only)
-* Alipay.
-* WeChat Payment.
+Get started with following APIs:
 
-The payment methods list can be adjusted dynamically according to your preference. Besides, Aggregate Payment can be used for account system like LianLian E-wallet.
+* [Easy Payment](docs/easypay.md). Unified bank card payment solution including:
+    * Debit card payments.
+    * Credit card payments, authorization and capture functions are supported.
+
+* [Aggregate Payment](docs/aggregate_pay.md). Redirect your users to pages hosted by LianLian and proceed payments with multiple methods.
 
 ***
 

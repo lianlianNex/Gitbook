@@ -1,4 +1,4 @@
-# Aggregate Payment Asynchronous Notification
+# Payment Asynchronous Notification
 
 Once a payment request is processed, LianLian will send the results to the notification URL ```notify_url``` via server-side HTTP requests, which is wrote into *HttpInputStream*. 
 
@@ -22,7 +22,7 @@ Once a payment request is processed, LianLian will send the results to the notif
 |info_order|Optional|String(255)| Returns when ```info_order``` is sent in API requests|
 |pay_type|Optional|String| The payment method used in this transaction. <br> 0, balance payment <br> 1, online banking payment (debit card) <br> 8, online banking payment (credit card) <br> 9, business online banking payment <br> 2, express payment (debit card) <br> 3, express payment (credit card)<br> D, verified payment <br> I, WeChat Payment <br> L, Alipay Payment| 
 |bank_code|Optional|String| Short codes of banks |
-|no_agree|Optional|String| Permanent token. Returns for express payment and verified payment. |
+|no_agree|Optional|String| A token which represents the key payment information, refer to [Binding Card](easypay.md) for more details |
 
 ###### Sample asynchronous notification
 
@@ -91,7 +91,7 @@ LianLian expects you to respond asynchronous notification with below json object
 
 Assuming there is no issues from internet layer, if we haven't received your response within 5 seconds or the response does NOT match our expectation, asynchronous notification mechanism would mark the result as FAILURE and send it again. 
 
-Resending logic: 30 times in total with an interval of 2 minutes, until your server has correctly handled the notification. But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [paymnet status query API](/docs/paymentStatusQuery.html) by yourself. 
+Resending logic: 30 times in total with an interval of 2 minutes, until your server has correctly handled the notification. But if we never got the expected response after 30 times, the resending action would be stopped. In this case,  you will have to query [paymnet status query API](aggregate_payment_result_query.md) by yourself. 
 
 However, there are few cases like internet traffic jam, network delay, packet loss or other causes which results in an unexpected phenomenon, that your server has received 2 same asynchronous notification for a same transaction. In case of it, you **MUST** have the capability to handle duplicated asynchronous notifications, respond them with the expected response of LianLian but proceed your successful logic only **ONCE**. The financial risks which caused by repeated asynchronous notification borne by yourselves.
 

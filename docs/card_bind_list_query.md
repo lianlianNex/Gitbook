@@ -1,7 +1,5 @@
 # Card Bind List Query API
 
-***
-
 ## Request
 
 ###### Endpoint
@@ -47,7 +45,7 @@ curl https://queryapi.lianlianpay.com/bankcardbindlist.htm \
 
 |Name|Required|Type|Description|
 |---|---|---|---|
-|ret_code|Required|String(4)|Return code, whether the request is handled successfully or not|
+|ret_code|Required|String(4)|Return code, whether the request is handled successfully or not. Refer to [return codes](return_code.md)|
 |ret_msg|Required|String(100)|Return message, description of ```ret_code```, in Chinese |
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
@@ -60,7 +58,7 @@ Below parameters are included in ```agreement_list```:
 
 |Name|Required|Type|Description|
 |---|---|---|---|
-|no_agree|Required|String(16)| Permanent token|
+|no_agree|Required|String(16)| A token which represents the key payment information, refer to [Binding Card](easypay.md) for more details |
 |card_no|Required|String(4)| Last 4 digits of used card |
 |bank_code|Required|String(8) | The bank short code of used card |
 |bank_name|Required|String(32)| The bank name of used card, in Chinese|
