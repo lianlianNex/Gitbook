@@ -27,7 +27,7 @@ All risk parameters ought to be set in a json format and assigned to ```risk_ite
 ## Basic Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |frms_ware_category|Required|String||
 |frms_is_real_name|Optional|String| 0, Non-real-name <br> 1, Real name |
 |user_info_mercht_userno|Required|String| Merchant user No. Value can be same with ```user_id``` |
@@ -44,7 +44,7 @@ All risk parameters ought to be set in a json format and assigned to ```risk_ite
 ## API Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |frms_client_chnl|Required|String| Your client side type. 10, Mobile application <br> 13, Web application <br> 16, H5 application |
 |frms_ip_addr|Required|String|End-user's IP address|
 
@@ -53,7 +53,7 @@ All risk parameters ought to be set in a json format and assigned to ```risk_ite
 ## Real-name Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |user_info_full_name|Required|String| Your user's name|
 |user_info_id_type|Required|String|0, ID Card or Business License <br> 1, Household Register <br> 2, Passport <br> 3, Certificate of Military Office <br> 4, Certificate of Soldier <br> 5, Mainland Travel Permit for Hong Kong and Macau Residents <br> 6, Mainland Travel Permit for Taiwan Residents <br> 7, Temporary ID Card <br> 8, Residence Permit for Foreigners <br> 9, Police ID Card <br> X, Other Certificates <br> By default is 0, currently only 0 is supported |
 |user_info_id_no|Required|String||
@@ -65,7 +65,7 @@ All risk parameters ought to be set in a json format and assigned to ```risk_ite
 ## Delivery Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |delivery_addr_full|Required|String|Address full name includes county (district)|
 |delivery_addr_province|Required|String|Province code |
 |delivery_addr_city|Required|String|City code|

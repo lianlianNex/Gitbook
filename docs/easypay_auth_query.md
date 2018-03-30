@@ -11,7 +11,7 @@ https://queryapi.lianlianpay.com/preauthquery.htm
 ###### Request Parameter
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |platform|Optional|String(32)| ```platform``` is used for sharing user info between multiple ```oid_partner```, this requires additional settings from LianLian side|
 |sign_type|Required|String(3)|RSA |
@@ -46,7 +46,7 @@ curl https://queryapi.lianlianpay.com/preauthquery.htm \
 ###### Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |ret_code|Required|String(4)|2003, transaction created <br> 2006, transaction expired <br> PR07, apply authorization successfully <br> PR08, applying authorization needs verification <br> PR09, apply authorization is processing <br> PR10, apply authorization failed <br> PR11, capture authorization successfully <br> PR12, capture authorization is processing <br> PR13, capture authorization failed <br> PR14, void authorization successfully  <br> PR15, void authorization is processing <br> PR16, void authorization failed <br> For others, refer to [return codes](return_code.md)|
 |ret_msg|Required|String(255)|Return message, description of ```ret_code```, in Chinese|
 |sign_type|Required|String(3)|RSA |

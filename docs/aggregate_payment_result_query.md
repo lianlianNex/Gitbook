@@ -108,7 +108,7 @@ curl https://wallet.lianlianpay.com/llwalletapi/orderquery.htm \
 ###### Parameter
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |ret_code|Required|String(4)|0000, Refer to [return codes](return_code.md)|
 |ret_msg|Required|String(100)|交易成功|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|

@@ -19,13 +19,13 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 ###### Request Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |version|Required|String|Fixed value, ```1.0```|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |platform|Optional|String(32)| ```platform``` is used for sharing user info between multiple ```oid_partner```, this requires additional settings from LianLian side|
 |user_id|Required|String(32)|The unique identification assigned to the user in the merchant’s system|
 |app_request|Required|String(1)| 1, Android <br> 2, iOS <br> 3, H5|
-|timestamp|Required|String(14)|The time when request is initialized. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
+|timestamp|Required|String(14)|The time when request is initialized. Format: YYYYMMDDHHMMSS, E.g. 20170801225714. The time difference between your server and LianLian server(UTC +8) should be no more than 30 mins|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |bg_color|Optional|String(6)|The background color of payment pages. Range: ```000000``` ~ ```ffffff```. By default is ```ff5001```|
@@ -44,7 +44,7 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 |valid_order|Optional|Int|The valid period of ```no_order```, in minute. The status of corresponding transaction will be set to "Closed" once its ```valid_order``` run out. Default: 10080 (7 days). |
 |pay_type|Required|String| M, regular payments <br> F, authorization, used for credit card only. An error throws out if the used card is not a credit card|
 |id_type|Optional|String(1)| 0, ID card <br> 2, Passport <br> 3, Military Officer Certificate <br> 4, Hong Kong-Macau laissez-passer <br> 6, Mainland travel permit for Taiwan residents <br> 9, Police Officer card <br> X, other certificates |
-|id_no|Optional|String| Only ID card is supported, the length need to be either 15 or 18. Required for Verified Payment|
+|id_no|Optional|String|The length need to be either 15 or 18|
 |acct_name|Optional|String|The name of payer, in Chinese. Required for Verified Payment |
 |risk_item|Required|String| This parameter is used for payment risk control, all required parameters should be included in the value of ```risk_item``` in json format, refer to [Payment Risk](payment_risk_item.md)| 
 |card_no|Optional|String|User's card number|
@@ -85,7 +85,7 @@ Payment synchronous notification, a HTTP POST request, will be sent to ```url_re
 ###### Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|

@@ -11,7 +11,7 @@ https://queryapi.lianlianpay.com/bankcardbin.htm
 ###### Request Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |api_version|Optional|String(6)| Fixed value: 1.0|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
@@ -38,7 +38,7 @@ curl https://queryapi.lianlianpay.com/bankcardbin.htm \
 ###### Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |ret_code|Required|String(4)|Return code, whether the request is handled successfully or not. Refer to [return codes](return_code.md)|
 |ret_msg|Required|String(100)|Return message, description of ```ret_code```, in Chinese |
 |sign_type|Required|String(3)|RSA |

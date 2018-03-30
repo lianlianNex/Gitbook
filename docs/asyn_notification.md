@@ -1,6 +1,6 @@
 # Payment Asynchronous Notification
 
-Once a payment request is processed, LianLian will send the results to the notification URL ```notify_url``` via server-side HTTP requests, which is wrote into *HttpInputStream*. 
+Once a payment request is processed, LianLian will send the results to the notification URL ```notify_url``` via server-side HTTP POST requests, which is wrote into *HttpInputStream*. 
 
 > Your servers are informed of the successful result only. No notification will be sent for unsuccessful or abnormal transactions. 
 
@@ -9,7 +9,7 @@ Once a payment request is processed, LianLian will send the results to the notif
 ## Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|

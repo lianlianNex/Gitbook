@@ -11,7 +11,7 @@ https://queryapi.lianlianpay.com/bankcardbindlist.htm
 ###### Request Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
@@ -44,7 +44,7 @@ curl https://queryapi.lianlianpay.com/bankcardbindlist.htm \
 ###### Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |ret_code|Required|String(4)|Return code, whether the request is handled successfully or not. Refer to [return codes](return_code.md)|
 |ret_msg|Required|String(100)|Return message, description of ```ret_code```, in Chinese |
 |sign_type|Required|String(3)|RSA |
@@ -57,7 +57,7 @@ curl https://queryapi.lianlianpay.com/bankcardbindlist.htm \
 Below parameters are included in ```agreement_list```:
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |no_agree|Required|String(16)| A token which represents the key payment information, refer to [Binding Card](easypay.md) for more details |
 |card_no|Required|String(4)| Last 4 digits of used card |
 |bank_code|Required|String(8) | The bank short code of used card |

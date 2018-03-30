@@ -15,12 +15,12 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 ###### Request Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |version|Required|String|Fixed value, ```1.0```|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |platform|Optional|String(32)| ```platform``` is used for sharing user info between multiple ```oid_partner```, this requires additional settings from LianLian side|
 |user_id|Required|String(32)|The unique identification assigned to the user in the merchant’s system|
-|timestamp|Required|String(14)|The time when request is initialized. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
+|timestamp|Required|String(14)|The time when request is initialized. Format: YYYYMMDDHHMMSS, E.g. 20170801225714. The time difference between your server and LianLian server(UTC +8) should be no more than 30 mins|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |busi_partner|Required|String(6)|Fixed value. Virtual products, ```101001```; Physical products, ```109001```|
@@ -39,7 +39,7 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 |back_url|Optional|String(128)| The url where user is redirected when they need to change cards. For [payment info preset](easypay.md#payment-info-preset) only|
 |no_agree|Optional|String(32)| A token which represents the key payment information, refer to [Binding Card](easypay.md) for more details|
 |id_type|Optional|String(1)| 0, ID card <br> 2, Passport <br> 3, Military Officer Certificate <br> 4, Hong Kong-Macau laissez-passer <br> 6, Mainland travel permit for Taiwan residents <br> 9, Police Officer card <br> X, other certificates |
-|id_no|Optional|String| Only ID card is supported, the length need to be either 15 or 18. Required for Verified Payment|
+|id_no|Optional|String| The length need to be either 15 or 18|
 |acct_name|Optional|String|The name of payer, in Chinese. Required for Verified Payment |
 |card_no|Optional|String|User's card number|
 
@@ -80,7 +80,7 @@ Payment synchronous notification, a HTTP POST request, will be sent to ```url_re
 ###### Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |ret_code|Required|String(4)|Return code, whether the request is handled successfully or not. Refer to [return codes](return_code.md)|
 |ret_msg|Required|String(100)|Return message, description of ```ret_code```, in Chinese |
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|

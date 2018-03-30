@@ -26,7 +26,7 @@ This document is targeted to people who are capable of web development and under
 
 ## Integration Type
 
-###### Front-end payment
+###### Redirect API
 
 The payment process are handled in pages hosted by LianLianPay, Inc. Implementation is limited to client-side by using redirect APIs.
 
@@ -36,7 +36,7 @@ Steps:
 2. Submit the payment form and then redirect users to LianLian payment pages.
 3. Your users complete payments externally of your application and can be redirected back.
 
-###### Back-end payment
+###### Direct API
 
 Payment information are collected by your servers and communicated to LianLian servers directly to proceed payments.
 

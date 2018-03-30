@@ -2,13 +2,13 @@
 
 Welcome to LianLian.
 
-Get started with following APIs:
+Get started with following products:
 
 * [Easy Payment](docs/easypay.md). Unified bank card payment solution including:
     * Debit card payments.
     * Credit card payments, authorization and capture functions are supported.
 
-* [Aggregate Payment](docs/aggregate_pay.md). Redirect your users to pages hosted by LianLian and proceed payments with multiple methods.
+* [Aggregate Payment](docs/aggregate_pay.md). Proceed payments with multiple methods.
 
 ***
 

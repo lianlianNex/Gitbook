@@ -11,7 +11,7 @@ https: //traderapi.lianlianpay.com/bankcardunbind.htm
 ###### Request Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
@@ -42,7 +42,7 @@ curl https: //traderapi.lianlianpay.com/bankcardunbind.htm \
 ###### Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |ret_code|Required|String(4)|Return code, whether the request is handled successfully or not. For [Card Unbind API](#card-unbind-api), ```no_agree``` is removed if you have gotten ```ret_code=0000```. For other codes, refer to [return codes](return_code.md)|
 |ret_msg|Required|String(100)|Return message, description of ```ret_code```, in Chinese |
 |sign_type|Required|String(3)|RSA |

@@ -9,10 +9,4 @@ Aggregate Payment allows you to accept payments with a single integration for be
 * **WechatPay**. Similar to Alipay.
 * **Balance payment**. This payment methods is for E-wallet merchants only. For the documents of E-wallet, please contact our support.
 
-***
-
-## Flows
-
-The flows are various from different payment methods.
-
-![](/textures/aggregate_web_flow.svg)
+All above payment methods are available by redirecting your users to pages hosted by LianLian via [aggregate payment redirect API](aggregate_redirect.md). On the other hand, [aggregate payment direct API](aggregate_direct.md) is available for WechatPay and Alipay.

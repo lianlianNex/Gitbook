@@ -15,11 +15,11 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 ###### Request Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |version|Required|String|Fixed value, ```1.1```|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |user_id|Required|String(32)|The unique identification assigned to the user in the merchant’s system|
-|timestamp|Required|String(14)|The time when request is initialized. Format: YYYYMMDDHHMMSS, E.g. 20170801225714|
+|timestamp|Required|String(14)|The time when request is initialized. Format: YYYYMMDDHHMMSS, E.g. 20170801225714. The time difference between your server and LianLian server(UTC +8) should be no more than 30 mins|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
 |busi_partner|Required|String(6)|Fixed value. Virtual products, ```101001```; Physical products, ```109001```|
@@ -36,7 +36,7 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 |risk_item|Required|String| This parameter is used for payment risk control, all required parameters should be included in the value of ```risk_item``` in json format, refer to [Payment Risk](payment_risk_item.md)| 
 |col_oidpartner|Optional|String(18)| ```oid_partner``` of recipient, which is mainly used in LianLian E-wallet. The value is set as ```oid_partner``` to which ```user_id``` belongs by default. |
 |col_userid|Optional|String(32)| ```user_id``` of recipient, which is mainly used in LianLian E-wallet. Note there is only one recipient, ```col_userid``` and ```col_oidparnter``` can not be used in a same request |
-|shareing_data|Optional|String(1024)| Refer to [Sharing data instruction](#sharing-data-instruction) |
+|shareing_data|Optional|String(1024)| Refer to [Sharing data introduction](#sharing-data-introduction) |
 |secured_partner|Optional|String(18)|```oid_partner``` of guarantor, which is mainly used in guaranteed transactions. Refer to LianLian E-wallet documentation for more details|
 |buyer_confirm_valid|Optional|Int| |
 |seller_send_valid|Optional|Int| |
@@ -92,7 +92,7 @@ Payment synchronous notification, a HTTP POST request, will be sent to ```url_re
 ###### Parameters
 
 |Name|Required|Type|Description|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |oid_partner|Required|String(18)|The unique identification assigned to the merchant. E.g. 201304121000001004|
 |sign_type|Required|String(3)|RSA |
 |sign|Required|String|Signature value|
@@ -107,3 +107,11 @@ Payment synchronous notification, a HTTP POST request, will be sent to ```url_re
 |bank_code|Optional|String| Short codes of banks |
 
 There is no need to send response for synchronous notification.
+
+***
+
+## Flow
+
+Below is the flow of redirect API for different payment methods.
+
+![](/textures/aggregate_web_flow.svg)
