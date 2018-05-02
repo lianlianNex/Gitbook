@@ -12,6 +12,8 @@
         * [Web Redirect API](docs/easypay_web_redirect.md)
         * [H5 Redirect API](docs/easypay_h5_redirect.md)
         * [Mobile](docs/easypay_mobile.md)
+        * [Direct Apply API](docs/easypay_direct_apply.md)
+        * [Direct Verify API](docs/easypay_direct_verify.md)
         * [Authorization Query API](docs/easypay_auth_query.md)
         * [Authorization Capture API](docs/easypay_auth_capture.md)
         * [Authorization Void API](docs/easypay_auth_void.md)

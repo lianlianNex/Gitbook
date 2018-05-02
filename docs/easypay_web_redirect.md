@@ -39,8 +39,8 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 |back_url|Optional|String(128)| The url where user is redirected when they need to change cards. For [payment info preset](easypay.md#payment-info-preset) only|
 |no_agree|Optional|String(32)| A token which represents the key payment information, refer to [Binding Card](easypay.md) for more details|
 |id_type|Optional|String(1)| 0, ID card <br> 2, Passport <br> 3, Military Officer Certificate <br> 4, Hong Kong-Macau laissez-passer <br> 6, Mainland travel permit for Taiwan residents <br> 9, Police Officer card <br> X, other certificates |
-|id_no|Optional|String| The length need to be either 15 or 18|
-|acct_name|Optional|String|The name of payer, in Chinese. Required for Verified Payment |
+|id_no|Optional|String| The number of User's ID card. The length need to be either 15 or 18|
+|acct_name|Optional|String|The name of payer, in Chinese|
 |card_no|Optional|String|User's card number|
 
 > ```id_no```, ```acct_name```, ```id_type```, ```card_no``` are ignored if ```no_agree``` is present.
@@ -49,23 +49,23 @@ The way to call this API is limited to HTML ```<form/>``` post request from clie
 
 ```html
 <form action="https://payment.lianlianpay.com/payment/traveleasypay.htm" method="post"> 
-<input type="text" name="version" value="1.0">
-<input type="text" name="oid_partner" value="201304121000001004">
-<input type="text" name="user_id" value="111111">
-<input type="text" name="timestamp" value="20180301175839">
-<input type="text" name="busi_partner" value="101001">
-<input type="text" name="no_order" value="2013099129111111">
-<input type="text" name="dt_order" value="20130224120224">
-<input type="text" name="name_goods" value="测试商品">
-<input type="text" name="info_order" value="测试商品信息">
-<input type="text" name="money_order" value="49.95">
-<input type="text" name="notify_url" value="http://domain:port/notify">
-<input type="text" name="url_return" value="http://domain:port/return">
-<input type="text" name="userreq_ip" value="*.*.*.*">
-<input type="text" name="pay_type" value="M">
-<input type="text" name="sign_type" value="RSA">
-<input type="text" name="sign" value="RSA签名结果">
-<input type="submit" value="立即支付">
+    <input type="text" name="version" value="1.0">
+    <input type="text" name="oid_partner" value="201304121000001004">
+    <input type="text" name="user_id" value="111111">
+    <input type="text" name="timestamp" value="20180301175839">
+    <input type="text" name="busi_partner" value="101001">
+    <input type="text" name="no_order" value="2013099129111111">
+    <input type="text" name="dt_order" value="20130224120224">
+    <input type="text" name="name_goods" value="测试商品">
+    <input type="text" name="info_order" value="测试商品信息">
+    <input type="text" name="money_order" value="49.95">
+    <input type="text" name="notify_url" value="http://domain:port/notify">
+    <input type="text" name="url_return" value="http://domain:port/return">
+    <input type="text" name="userreq_ip" value="*.*.*.*">
+    <input type="text" name="pay_type" value="M">
+    <input type="text" name="sign_type" value="RSA">
+    <input type="text" name="sign" value="RSA签名结果">
+    <input type="submit" value="立即支付">
 </form>
 ```
 
